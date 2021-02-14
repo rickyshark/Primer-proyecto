@@ -21,6 +21,8 @@
 
 
  Rangel se reporta
+
+ Jose explica
  
  
  
