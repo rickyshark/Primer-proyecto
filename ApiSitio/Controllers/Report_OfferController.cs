@@ -60,8 +60,7 @@ namespace ApiSitio.Controllers
         {
             try
             {
-                var report_O = context.Report_Offer.FirstOrDefault(x => x.Id == id);
-                if (report_O != null)
+                if (report.Id == id)
                 {
                     context.Entry(report).State = EntityState.Modified;
                     context.SaveChanges();
