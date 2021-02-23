@@ -13,38 +13,36 @@ namespace ApiSitio.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class Usuario1Controller : ControllerBase
+    public class CorreoController : ControllerBase
     {
         private readonly AppDbContext context;
 
-        public Usuario1Controller(AppDbContext context)
+        public CorreoController(AppDbContext context)
         {
             this.context = context;
         }
-        // GET: api/<Usuario1Controller>
+        // GET: api/<CorreoController>
         [HttpGet]
-        public IEnumerable<Usuario1> Get()
+        public IEnumerable<Correo> Get()
         {
-            return context.Usuario1.ToList();
+            return context.Correo.ToList();
         }
 
-        // GET api/<Usuario1Controller>/5
+        // GET api/<CorreoController>/5
         [HttpGet("{ID}")]
-        public Usuario1 Get(int ID)
+        public Correo Get(int ID)
         {
-            var Usuario = context.Usuario1.FirstOrDefault(x => x.ID == ID);
-
-            return Usuario;
-
+            var correo = context.Correo.FirstOrDefault(x => x.ID == ID);
+            return correo;
         }
 
-        // POST api/<Usuario1Controller>
+        // POST api/<CorreoController>
         [HttpPost]
-        public ActionResult Post([FromBody] Usuario1 usuario1)
+        public ActionResult Post([FromBody] Correo correo)
         {
             try
             {
-                context.Usuario1.Add(usuario1);
+                context.Correo.Add(correo);
                 context.SaveChanges();
                 return Ok();
             }
@@ -54,17 +52,16 @@ namespace ApiSitio.Controllers
             }
         }
 
-        // PUT api/<Usuario1Controller>/5
+        // PUT api/<CorreoController>/5
         [HttpPut("{ID}")]
-        public ActionResult Put(int ID, [FromBody] Usuario1 usuario1)
+        public ActionResult Put(int ID, [FromBody] Correo correo)
         {
             try
             {
-                if (usuario1.ID == ID)
+                if (correo.ID == ID)
                 {
-                    context.Entry(usuario1).State = EntityState.Modified;
+                    context.Entry(correo).State = EntityState.Modified;
                     context.SaveChanges();
-
                 }
                 return Ok();
             }
@@ -74,19 +71,20 @@ namespace ApiSitio.Controllers
             }
         }
 
-        // DELETE api/<Usuario1Controller>/5
+        // DELETE api/<CorreoController>/5
         [HttpDelete("{ID}")]
         public ActionResult Delete(int ID)
         {
             try
             {
-                var usuario1 = context.Usuario1.FirstOrDefault(x => x.ID == ID);
-                if (usuario1 != null)
+                var categoria = context.Correo.FirstOrDefault(x => x.ID == ID);
+                if (categoria != null)
                 {
-                    context.Usuario1.Remove(usuario1);
+                    context.Correo.Remove(categoria);
                     context.SaveChanges();
                 }
                 return Ok();
+
             }
             catch (Exception ex)
             {

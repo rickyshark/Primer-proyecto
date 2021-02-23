@@ -1,0 +1,10 @@
+C:\Users\Admin\Desktop\ITLA\Programacion 3\Proyecto 1\Proyecto 1 code\ApiSitio\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\Admin\Desktop\ITLA\Programacion 3\Proyecto 1\Proyecto 1 code\ApiSitio\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\Admin\Desktop\ITLA\Programacion 3\Proyecto 1\Proyecto 1 code\ApiSitio\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+C:\Users\Admin\Desktop\ITLA\Programacion 3\Proyecto 1\Proyecto 1 code\ApiSitio\bin\Debug\netcoreapp3.1\ApiSitio.exe
+C:\Users\Admin\Desktop\ITLA\Programacion 3\Proyecto 1\Proyecto 1 code\ApiSitio\obj\Debug\netcoreapp3.1\ApiSitio.csprojAssemblyReference.cache
+C:\Users\Admin\Desktop\ITLA\Programacion 3\Proyecto 1\Proyecto 1 code\ApiSitio\obj\Debug\netcoreapp3.1\ApiSitio.AssemblyInfoInputs.cache
+C:\Users\Admin\Desktop\ITLA\Programacion 3\Proyecto 1\Proyecto 1 code\ApiSitio\obj\Debug\netcoreapp3.1\ApiSitio.AssemblyInfo.cs
+C:\Users\Admin\Desktop\ITLA\Programacion 3\Proyecto 1\Proyecto 1 code\ApiSitio\obj\Debug\netcoreapp3.1\ApiSitio.RazorTargetAssemblyInfo.cache
+C:\Users\Admin\Desktop\ITLA\Programacion 3\Proyecto 1\Proyecto 1 code\ApiSitio\obj\Debug\netcoreapp3.1\staticwebassets\ApiSitio.StaticWebAssets.Manifest.cache
+C:\Users\Admin\Desktop\ITLA\Programacion 3\Proyecto 1\Proyecto 1 code\ApiSitio\obj\Debug\netcoreapp3.1\staticwebassets\ApiSitio.StaticWebAssets.xml
