@@ -8,3 +8,8 @@ C:\Users\Admin\Desktop\ITLA\Programacion 3\Proyecto 1\Proyecto 1 code\ApiSitio\o
 C:\Users\Admin\Desktop\ITLA\Programacion 3\Proyecto 1\Proyecto 1 code\ApiSitio\obj\Debug\netcoreapp3.1\ApiSitio.RazorTargetAssemblyInfo.cache
 C:\Users\Admin\Desktop\ITLA\Programacion 3\Proyecto 1\Proyecto 1 code\ApiSitio\obj\Debug\netcoreapp3.1\staticwebassets\ApiSitio.StaticWebAssets.Manifest.cache
 C:\Users\Admin\Desktop\ITLA\Programacion 3\Proyecto 1\Proyecto 1 code\ApiSitio\obj\Debug\netcoreapp3.1\staticwebassets\ApiSitio.StaticWebAssets.xml
+C:\Users\monte\Source\Repos\Primer-proyecto\ApiSitio\obj\Debug\netcoreapp3.1\ApiSitio.csprojAssemblyReference.cache
+C:\Users\monte\Source\Repos\Primer-proyecto\ApiSitio\obj\Debug\netcoreapp3.1\ApiSitio.AssemblyInfoInputs.cache
+C:\Users\monte\Source\Repos\Primer-proyecto\ApiSitio\obj\Debug\netcoreapp3.1\ApiSitio.AssemblyInfo.cs
+C:\Users\monte\Source\Repos\Primer-proyecto\ApiSitio\obj\Debug\netcoreapp3.1\ApiSitio.csproj.CoreCompileInputs.cache
+C:\Users\monte\Source\Repos\Primer-proyecto\ApiSitio\obj\Debug\netcoreapp3.1\ApiSitio.MvcApplicationPartsAssemblyInfo.cache
