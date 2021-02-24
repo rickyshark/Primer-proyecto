@@ -17,28 +17,30 @@
         <nav>
             <ul>
                 <div class="nav-header">
-                    <a href="Home.html"></a>
+                    
                     <li>
+                        <a asp-controller="Job" asp-action="ScreenPrincipalView">
                         <img src="~/img/logo.svg" alt="Logo" width="40">
+                        </a>
                     </li>
                     <li>&nbsp Proyecto Web</li>
-                  </a>
+                  
                  </div>
 
                 <div class="nav-body">
                     <li>
-                        <a href="">Buscar Empleo <img src="~/img/search.svg" alt="Search" width="20px"> </a>
+                        <a asp-controller="Job" asp-action="SearchJob">Buscar Empleo <img src="~/img/search.svg" alt="Search" width="20px"> </a>
                     </li>
                     <li>
-                        <a href=""> Ver Categorias <img src="~/img/Category.svg" alt="Category" width="20px"> </a>
+                        <a> Ver Categorias <img src="~/img/Category.svg" alt="Category" width="20px"> </a>
                     </li>
                 </div>
                 <div class="nav-end">
                     <li class="">
-                       <a href="" class="nav-botton-post"> Postear un empleo</a>
+                       <a asp-controller="Acceso" asp-action="Register" class="nav-botton-post"> Postear un empleo</a>
                     </li>
                     <li>
-                        <a href="" class="nav-botton-login">Ingresar</a>
+                        <a asp-controller="Acceso" asp-action="Login" class="nav-botton-login">Ingresar</a>
                     </li>
 
                 </div>
@@ -47,7 +49,7 @@
     </header>
             @RenderBody()
  <footer>
-        <p>Made with &#10084;&#65039; for you</p>
+        <p>Made with &#10084;&#65039; for you by Grupo #3</p>
     </footer>
 
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
