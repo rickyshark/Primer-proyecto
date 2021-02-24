@@ -14417,6 +14417,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/home/carlossantos/Descargas/Primer-proyecto-3/MVC_Proyect/Views/Job/SearchJob.cshtml",
+      "TargetPath": "Views\\Job\\SearchJob.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/home/carlossantos/Descargas/Primer-proyecto-3/MVC_Proyect/Views/Shared/_ValidationScriptsPartial.cshtml",
       "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "FileKind": "mvc"

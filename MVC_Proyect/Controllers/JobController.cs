@@ -16,5 +16,10 @@ namespace MVC_Proyect.Controllers
             return View();
         }
 
+        public IActionResult SearchJob()
+        {
+            return View();
+        }
+
     }
 }

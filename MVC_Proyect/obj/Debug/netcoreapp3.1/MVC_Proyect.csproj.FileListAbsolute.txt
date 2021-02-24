@@ -144,3 +144,4 @@ C:/Users/monte/Source/Repos/Primer-proyecto/MVC_Proyect/obj/Debug/netcoreapp3.1/
 /home/carlossantos/Descargas/Primer-proyecto-3/MVC_Proyect/obj/Debug/netcoreapp3.1/MVC_Proyect.pdb
 /home/carlossantos/Descargas/Primer-proyecto-3/MVC_Proyect/obj/Debug/netcoreapp3.1/MVC_Proyect.genruntimeconfig.cache
 /home/carlossantos/Descargas/Primer-proyecto-3/MVC_Proyect/obj/Debug/netcoreapp3.1/MVC_Proyect.csproj.CopyComplete
+/home/carlossantos/Descargas/Primer-proyecto-3/MVC_Proyect/obj/Debug/netcoreapp3.1/Razor/Views/Job/SearchJob.cshtml.g.cs
