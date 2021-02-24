@@ -17,7 +17,7 @@
         <nav>
             <ul>
                 <div class="nav-header">
-                    <a href="Home.html"></a>
+                    <a asp-controller="Job" asp-action="ScreenPrincipalView"></a>
                     <li>
                         <img src="~/img/logo.svg" alt="Logo" width="40">
                     </li>
@@ -27,7 +27,7 @@
 
                 <div class="nav-body">
                     <li>
-                        <a href="">Buscar Empleo <img src="~/img/search.svg" alt="Search" width="20px"> </a>
+                        <a asp-controller="Job" asp-action="SearchJob">Buscar Empleo <img src="~/img/search.svg" alt="Search" width="20px"> </a>
                     </li>
                     <li>
                         <a href=""> Ver Categorias <img src="~/img/Category.svg" alt="Category" width="20px"> </a>
@@ -35,10 +35,10 @@
                 </div>
                 <div class="nav-end">
                     <li class="">
-                       <a href="" class="nav-botton-post"> Postear un empleo</a>
+                       <a asp-controller="Acceso" asp-action="Login" class="nav-botton-post"> Postear un empleo</a>
                     </li>
                     <li>
-                        <a href="" class="nav-botton-login">Ingresar</a>
+                        <a asp-controller="Acceso" asp-action="Register" class="nav-botton-login">Ingresar</a>
                     </li>
 
                 </div>
