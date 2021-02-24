@@ -1,0 +1,146 @@
+/* Landing */
+
+.landing {
+    display: flex;
+    margin: 25px auto;
+    height: 450px;
+    width: 99%;
+}
+
+.landing>h1 {
+    width: 50%;
+    padding-top: 60px;
+    font-size: 58px;
+    font-weight: normal;
+    letter-spacing: 2px;
+    line-height: 80px;
+    padding-left: 10px;
+}
+
+.landing>img {
+    width: 50%;
+}
+
+.landing-buscando {
+    font-style: italic;
+    font-weight: bold;
+    color: var(--azul);
+    margin-left: 270px;
+}
+
+
+/* Seccion Buscar Trabajo */
+
+.search-job {
+    background-color: var(--gris);
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 20px;
+}
+
+.search-job>form {
+    width: 98%;
+    margin: 0 auto;
+    padding: 25px;
+}
+
+form>* {
+    width: 390px;
+    height: 45px;
+    text-indent: 10px;
+    margin-right: 50px;
+    color: black;
+    font-weight: bold;
+}
+
+.btn-search {
+    width: 230px;
+    height: 55px;
+    background-color: var(--rojo);
+    border: none;
+    border-radius: 8px;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 20px;
+    float: right;
+}
+
+
+/* Seccion Lista de Empleos Recientes */
+
+.job {
+    max-width: 350px;
+    margin: 30px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 40px;
+}
+
+.job-header {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.job-header>div>* {
+    display: inline;
+}
+
+.job-header>div>p {
+    font-size: 17px;
+}
+
+.job-body>* {
+    padding: 25px 0px;
+    text-align: center;
+}
+
+.job-end {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 15px 40px;
+    background-color: var(--azul);
+    margin: 0 auto;
+    width: 110px;
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 6px;
+}
+
+.recent-job {
+    margin: 70px 0px;
+}
+
+.job-list {
+    background-color: var(--gris);
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.recent-job-title {
+    margin: 15px;
+    font-size: 35px;
+    letter-spacing: 2px;
+    color: var(--azul);
+}
+
+.container {
+    background-color: var(--gris);
+}
+
+.btn-job-more {
+    display: block;
+    width: 600px;
+    background-color: var(--rojo);
+    text-align: center;
+    padding: 20px;
+    color: #ffffff;
+    font-size: 26px;
+    font-weight: bold;
+    border-radius: 12px;
+    margin: 20px auto;
+}

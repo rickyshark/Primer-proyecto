@@ -5703,35 +5703,29 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\monte\\.nuget\\packages\\": {},
-    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
+    "/home/carlossantos/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\monte\\Source\\Repos\\Primer-proyecto\\ApiSitio\\ApiSitio.csproj",
+      "projectUniqueName": "/home/carlossantos/Descargas/Primer-proyecto-2/ApiSitio/ApiSitio.csproj",
       "projectName": "ApiSitio",
-      "projectPath": "C:\\Users\\monte\\Source\\Repos\\Primer-proyecto\\ApiSitio\\ApiSitio.csproj",
-      "packagesPath": "C:\\Users\\monte\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\monte\\Source\\Repos\\Primer-proyecto\\ApiSitio\\obj\\",
+      "projectPath": "/home/carlossantos/Descargas/Primer-proyecto-2/ApiSitio/ApiSitio.csproj",
+      "packagesPath": "/home/carlossantos/.nuget/packages/",
+      "outputPath": "/home/carlossantos/Descargas/Primer-proyecto-2/ApiSitio/obj/",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Microsoft\\Xamarin\\NuGet\\"
-      ],
       "configFilePaths": [
-        "C:\\Users\\monte\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "/home/carlossantos/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "projectReferences": {}
         }
       },
@@ -5743,6 +5737,7 @@
     },
     "frameworks": {
       "netcoreapp3.1": {
+        "targetAlias": "netcoreapp3.1",
         "dependencies": {
           "Microsoft.EntityFrameworkCore": {
             "target": "Package",
@@ -5763,6 +5758,20 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[3.1.10, 3.1.10]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Host.linux-x64",
+            "version": "[3.1.12, 3.1.12]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[3.1.0, 3.1.0]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"
@@ -5771,7 +5780,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/5.0.103/RuntimeIdentifierGraph.json"
       }
     }
   }
