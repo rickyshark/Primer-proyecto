@@ -1,0 +1,134 @@
+﻿* {
+    margin: 0px;
+    padding: 0px;
+    outline: none;
+    text-decoration: none;
+}
+
+::placeholder {
+    font-family: Roboto;
+}
+
+.header-padre{
+    display:none;
+}
+
+footer{
+    display:none;
+}
+
+.second-body {
+    background-color: #003462;
+}
+
+#container {
+    background-color: white;
+    width: 1189px;
+    height: 589px;
+    margin: 0px auto;
+    margin-top: 35px;
+    border-radius: 60px 60px 60px 60px;
+}
+
+main {
+    display: flex;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+section {
+    width: 50%;
+    height: 580px;
+}
+
+.img-side {
+    background: url("https://image.freepik.com/free-vector/website-development-isometric-illustration_67419-69.jpg");
+    border-radius: 60px 0px 0px 60px;
+}
+
+.form-container {
+    margin-left: 91px;
+    margin-top: 40px;
+}
+
+    .form-container > header {
+        margin-left: 76px;
+    }
+
+        .form-container > header > div img {
+            height: 90px;
+            width: 380px;
+        }
+
+        .form-container > header > img {
+            height: 90px;
+            margin-left: 64px;
+        }
+
+        .form-container > header > h1 {
+            font-size: 40px;
+            font-family: Verdana;
+            color: #9C9BA0;
+            letter-spacing: 2px;
+        }
+
+    .form-container > form {
+        margin-top: 31px;
+    }
+
+input[type='text'], input[type='password'] {
+    width: 380px;
+    height: 30px;
+    font-weight: bold;
+    font-family: Verdana;
+    font-size: 16px;
+    border: none;
+    border-bottom: 3px solid #67A5E2;
+}
+
+    input[type='text']:focus, input[type='password']:focus {
+        border-color: aqua;
+    }
+
+input[type='button'] {
+    width: 280px;
+    height: 48px;
+    margin-top: 40px;
+    margin-left: 55px;
+    border: none;
+    font-weight: bolder;
+    color: white;
+    background-color: #1976D3;
+    border-radius: 88px;
+    cursor: pointer;
+    letter-spacing: 1px;
+    transition: 1s;
+}
+
+    input[type='button']:hover {
+        width: 295px;
+    }
+
+.form-container > form div:nth-child(2) {
+    margin-top: 40px;
+}
+
+#registrarse-link {
+    width: 210px;
+    height: 48px;
+    color: white;
+    font-weight: bolder;
+    border: none;
+    background-color: orange;
+    margin-top: 10px;
+    margin-left: 95px;
+    border-radius: 88px;
+    padding-top: 5px;
+    cursor: pointer;
+    letter-spacing: 1px;
+    transition: 1s;
+}
+
+    #registrarse-link:hover {
+        width: 225px;
+    }
