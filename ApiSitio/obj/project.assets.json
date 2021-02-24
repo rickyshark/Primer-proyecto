@@ -5703,29 +5703,30 @@
     ]
   },
   "packageFolders": {
-    "/home/carlossantos/.nuget/packages/": {}
+    "C:\\Users\\justi\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/carlossantos/Descargas/Primer-proyecto-3/ApiSitio/ApiSitio.csproj",
+      "projectUniqueName": "C:\\Users\\justi\\OneDrive\\Escritorio\\Proyecto\\ApiSitio\\ApiSitio.csproj",
       "projectName": "ApiSitio",
-      "projectPath": "/home/carlossantos/Descargas/Primer-proyecto-3/ApiSitio/ApiSitio.csproj",
-      "packagesPath": "/home/carlossantos/.nuget/packages/",
-      "outputPath": "/home/carlossantos/Descargas/Primer-proyecto-3/ApiSitio/obj/",
+      "projectPath": "C:\\Users\\justi\\OneDrive\\Escritorio\\Proyecto\\ApiSitio\\ApiSitio.csproj",
+      "packagesPath": "C:\\Users\\justi\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\justi\\OneDrive\\Escritorio\\Proyecto\\ApiSitio\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/carlossantos/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\justi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "targetAlias": "netcoreapp3.1",
           "projectReferences": {}
         }
       },
@@ -5737,7 +5738,6 @@
     },
     "frameworks": {
       "netcoreapp3.1": {
-        "targetAlias": "netcoreapp3.1",
         "dependencies": {
           "Microsoft.EntityFrameworkCore": {
             "target": "Package",
@@ -5758,20 +5758,6 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[3.1.10, 3.1.10]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Host.linux-x64",
-            "version": "[3.1.12, 3.1.12]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Ref",
-            "version": "[3.1.0, 3.1.0]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"
@@ -5780,7 +5766,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/5.0.103/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
       }
     }
   }
