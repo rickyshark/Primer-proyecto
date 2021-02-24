@@ -16,5 +16,6 @@ namespace ApiSitio.Contexts
         public DbSet<Usuario1> Usuario1 { get; set; }
         public DbSet<Correo> Correo { get; set; }
         public DbSet<Report_Offer> Report_Offer { get; set; }
+        public DbSet<Offer_Job> Offer_Job { get; set; }
     }
 }
