@@ -1,5 +1,6 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "JFul/2eHWEmJfnT7XqmUwGFanElyLIs249Mcstdb6T57O7Tw0Kw8hF2K4854+KSikHx0B/PX/h3dSR6UadcXJA==",
   "success": true,
   "projectFilePath": "/home/carlossantos/Descargas/Primer-proyecto-4/MVC_Proyect/MVC_Proyect.csproj",
@@ -8,5 +9,11 @@
     "/home/carlossantos/.nuget/packages/microsoft.aspnetcore.app.ref/3.1.10/microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512",
     "/home/carlossantos/.nuget/packages/microsoft.netcore.app.host.linux-x64/3.1.12/microsoft.netcore.app.host.linux-x64.3.1.12.nupkg.sha512"
   ],
+=======
+  "dgSpecHash": "mlJvIMSnLquKEn+lX/6c44zZzraXFmXWz6cRrTpV5lggDateAZ6Jb5wEYvYjYSmp6NNz7IZJEFU5MeENXaHf8g==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Legnar Acv2\\Documents\\Programación 3\\ApiSitio\\MVC_Proyect\\MVC_Proyect.csproj",
+  "expectedPackageFiles": [],
+>>>>>>> f4e4f7bab2ae811ca7cb2cfb4d0f26d34fdbe2b3
   "logs": []
 }
