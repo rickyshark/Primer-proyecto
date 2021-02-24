@@ -23,7 +23,7 @@ namespace ApiSitio.Controllers
         [HttpGet]
         public IEnumerable<dynamic> Get()
         {
-            var Oferta_With_User_Information = context.Offer_Job.Join(context.Usuario1, Offer => Offer.Id_Usuario, User => User.ID, (Offer, User) => new { Offer, User }).ToList();
+            var Oferta_With_User_Information = context.Offer_Job.Join(context.Usuario1, Offer => Offer.Id_Usuario, User => User.ID, (Offer, User) => new { Offer, User.Email_emp, User.URL, User.Telefono, User.Email }).ToList();
 
             List<dynamic> dynamics = new List<dynamic>();
             dynamics.Add(Oferta_With_User_Information);
