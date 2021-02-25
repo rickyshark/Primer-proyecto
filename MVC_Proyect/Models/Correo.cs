@@ -6,13 +6,14 @@ using System.Threading.Tasks;
 using MVC_Proyect.Recursos;
 using MVC_Proyect.Recursos.Interface;
 using System.Text.Json;
+using Newtonsoft.Json;
 using System.Text.Json.Serialization;
 using System.Net.Http;
 
 
 namespace MVC_Proyect.Models
 {
-    public class Correo : RequestProperties, IGet
+    public class Correo : RequestProperties, IPost
     {
         [Key]
         public int ID { get; set; }
@@ -36,15 +37,15 @@ namespace MVC_Proyect.Models
                 return null;
             else
                 return MoldeNotificaciones.DevolverNotificacion(
-                     new Tuple<bool, string>(false, RESPUESTA_HTTP.RequestMessage.ToString()));
+                     new Tuple<bool, string>(false, REQUEST_ISSUES));
 
         }
        
-        public async Task<IEnumerable<Object>> Get()
+        public async Task<IEnumerable<Correo>> Get()
         {
             var json = await PETICION_HTTP.GetStringAsync(URL + DIRECTORIO_API);
 
-            var Listado = new List<string>();
+            var Listado =  JsonConvert.DeserializeObject<List<Correo>>(json);
             return Listado;
         }
 

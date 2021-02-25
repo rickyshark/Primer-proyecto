@@ -10,7 +10,7 @@ using MVC_Proyect.Recursos.Interface;
 
 namespace MVC_Proyect.Models
 {
-    public class Offer_Job : RequestProperties, IPost, IPut, IGet, IDelete
+    public class Offer_Job : RequestProperties, IPost, IPut, IDelete
     {
         [Key]
         public int Id { get; set; }
@@ -38,7 +38,7 @@ namespace MVC_Proyect.Models
                     new Tuple<bool, string>(true, "Oferta de trabajo posteada con Exito !"));
             else
                 return MoldeNotificaciones.DevolverNotificacion(
-                     new Tuple<bool, string>(false, RESPUESTA_HTTP.RequestMessage.ToString()));
+                     new Tuple<bool, string>(false, REQUEST_ISSUES));
         }
 
         public async Task<string> Put()
@@ -50,10 +50,10 @@ namespace MVC_Proyect.Models
                     new Tuple<bool, string>(true, "Oferta de trabajo Actualizada con Exito !"));
             else
                 return MoldeNotificaciones.DevolverNotificacion(
-                     new Tuple<bool, string>(false, RESPUESTA_HTTP.RequestMessage.ToString()));
+                     new Tuple<bool, string>(false, REQUEST_ISSUES));
         }
 
-        public async Task<IEnumerable<Object>> Get()
+        public async Task<IEnumerable<Offer_Job>> Get()
         {
             var json = await PETICION_HTTP.GetStringAsync(URL + DIRECTORIO_API);
 
@@ -70,7 +70,7 @@ namespace MVC_Proyect.Models
                                    new Tuple<bool, string>(true, "Oferta de trabajo Eliminada con Exito !"));
             else
                 return MoldeNotificaciones.DevolverNotificacion(
-                    new Tuple<bool, string>(false, RESPUESTA_HTTP.RequestMessage.ToString()));
+                    new Tuple<bool, string>(false, REQUEST_ISSUES));
         }
 
     }

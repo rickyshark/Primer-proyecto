@@ -10,7 +10,7 @@ using MVC_Proyect.Recursos.Interface;
 
 namespace MVC_Proyect.Models
 {
-    public class Usuario1 : RequestProperties, IPost, IPut, IGet, IDelete
+    public class Usuario1 : RequestProperties, IPost, IPut, IDelete
     {
         [Key]
         public int ID { get; set; }
@@ -37,7 +37,7 @@ namespace MVC_Proyect.Models
                 return null;
             else
                 return MoldeNotificaciones.DevolverNotificacion(
-                     new Tuple<bool, string>(false, RESPUESTA_HTTP.RequestMessage.ToString()));
+                     new Tuple<bool, string>(false, REQUEST_ISSUES));
         }
 
         public async Task<string> Put()
@@ -50,13 +50,12 @@ namespace MVC_Proyect.Models
                     new Tuple<bool, string>(true, "Informacion de Usuario Actualizado con Exito !"));
             else
                 return MoldeNotificaciones.DevolverNotificacion(
-                     new Tuple<bool, string>(false, RESPUESTA_HTTP.RequestMessage.ToString()));
+                     new Tuple<bool, string>(false, REQUEST_ISSUES));
         }
 
-        public async Task<IEnumerable<Object>> Get()
+        public async Task<IEnumerable<Usuario1>> Get()
         {
-            var json = await
-                           PETICION_HTTP.GetStringAsync(URL + DIRECTORIO_API);
+            var json = await PETICION_HTTP.GetStringAsync(URL + DIRECTORIO_API);
 
             var Listado = JsonConvert.DeserializeObject<List<Usuario1>>(json);
             return Listado;
@@ -64,15 +63,14 @@ namespace MVC_Proyect.Models
 
         public async Task<string> Delete()
         {           
-            RESPUESTA_HTTP = await
-                            PETICION_HTTP.DeleteAsync(URL + DIRECTORIO_API + "/" + ID);
+            RESPUESTA_HTTP = await PETICION_HTTP.DeleteAsync(URL + DIRECTORIO_API + "/" + ID);
 
             if (RESPUESTA_HTTP.IsSuccessStatusCode)
                 return MoldeNotificaciones.DevolverNotificacion(
                                    new Tuple<bool, string>(true, "Usuario Eliminado con Exito !"));
             else
                 return MoldeNotificaciones.DevolverNotificacion(
-                    new Tuple<bool, string>(false, RESPUESTA_HTTP.RequestMessage.ToString()));            
+                    new Tuple<bool, string>(false, REQUEST_ISSUES));            
         }
                     
     }

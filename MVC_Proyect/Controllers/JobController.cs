@@ -13,9 +13,8 @@ namespace MVC_Proyect.Controllers
 {
     public class JobController : Controller
     {
-        public IActionResult ScreenPrincipalView()
-        {
-           
+        public async Task<IActionResult> ScreenPrincipalView()
+        {            
             return View();
         }
 
