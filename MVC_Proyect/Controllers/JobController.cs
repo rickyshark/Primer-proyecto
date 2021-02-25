@@ -8,7 +8,6 @@ using Microsoft.Extensions.Logging;
 using MVC_Proyect.Models;
 using System.Net.Http;
 using Newtonsoft.Json;
-using System.Net;
 
 namespace MVC_Proyect.Controllers
 {
@@ -16,13 +15,15 @@ namespace MVC_Proyect.Controllers
     {
         public IActionResult ScreenPrincipalView()
         {
+           
             return View();
         }
 
+        [HttpGet]
         public IActionResult SearchJob()
         {
             return View();
         }
-
+       
     }
 }

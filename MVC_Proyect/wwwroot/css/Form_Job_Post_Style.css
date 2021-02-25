@@ -1,0 +1,271 @@
+﻿:root {
+    --azul: #2D9BF0;
+}
+
+::placeholder {
+    color: #8E8989;
+    font-size: 12px;
+}
+
+*{
+    outline:none;
+}
+
+.main-container {
+    width: 1004px;
+    min-height: 50px;
+    margin: 25px auto;
+    border: 3px solid var(--azul);
+    border-radius: 9px;
+}
+
+.header-form {
+    margin: 0px auto;
+    margin-left: 250px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    max-width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+    .header-form > h1 {
+        background-color: var(--azul);
+        color: white;
+        font-weight: bolder;
+        font-size: 23px;
+        padding: 20px;
+        border-radius: 35px;
+        font-family: Verdana;
+    }
+
+    .header-form > img {
+        height: 116px;
+    }
+
+/*Formulario area*/
+
+.section-formulario {
+    width: 990px;
+    min-height: 300px;
+    margin-top: 27px;
+    margin-left: 70px;
+    margin-bottom: 56px;
+}
+
+/*Formulario header*/
+.form-header > select {
+    background-color: white;
+    border: solid 2px var(--azul);
+    border-radius: 5px;
+    color: #8E8989;
+    font-size: 14px;
+    padding: 10px;
+    width: 209px;
+    height: 43px;
+}
+
+.form-header > div {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.form-header img {
+    height: 39px;
+    margin-left: 26px;
+}
+
+.lista-tipo {
+    display: flex;
+    background-color: white;
+    padding: 09px;
+    margin-left: 44px;
+    border: 2px solid var(--azul);
+    border-radius: 23px;
+    list-style: none;
+    text-decoration: none;
+}
+
+    .lista-tipo > li {
+        margin-left: 36px;
+        padding-right: 6px;
+        font-size: 16px;
+        color: var(--azul);
+    }
+
+.form-header > div > h2 {
+    background-color: var(--azul);
+    padding: 06px;
+    color: white;
+    font-family: Verdana;
+    font-weight: bold;
+    font-size: 19px;
+    width: 160px;
+    text-align: center;
+    border: 1px solid yellow;
+    letter-spacing: 1px;
+}
+
+input[type='radio'] {
+    -webkit-appearance: none;
+    width: 19px;
+    height: 19px;
+    border-radius: 50%;
+    border: 2px solid var(--azul);
+}
+
+    input[type='radio']:checked {
+        -webkit-appearance: auto;
+    }
+
+/*Formulario body */
+
+.form-body {
+    min-height: 20px;
+    width: 100%;
+    margin-top: 27px;
+    display: flex;
+}
+
+.form-first-column {
+    width: 50%;
+    min-height: 300px;
+    margin-top: 16px;
+}
+
+.form-second-column {
+    width: 50%;
+    margin-top: 11px;
+}
+
+.form-piece-text {
+    max-width: 520px;
+    min-height: 84px;
+}
+
+
+.form-label-first-column, .form-label-second-column {
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.form-label-first-column {
+    margin-left: 104px;
+}
+
+.form-label-second-column {
+    margin-left: 106px;
+}
+
+.obligatorio {
+    color: red;
+}
+
+.form-piece-text > div {
+    display: flex;
+    align-items: center;
+    margin-top: 07px;
+}
+
+    .form-piece-text > div > img {
+        height: 35px;
+    }
+
+input[type='text'] {
+    height: 15px;
+    padding: 12px;
+    font-size: 14px;
+    border: 2px solid var(--azul);
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.form-first-column input[type='text'] {
+    width: 250px;
+}
+
+.form-second-column input[type='text'] {
+    width: 250px;
+    margin-left: 31px;
+}
+
+.form-textarea {
+    border: 2px solid var(--azul);
+    border-radius: 6px;
+    width: 273px;
+    height: 79px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+    .form-textarea::placeholder {
+        padding-top: 30px;
+        padding-left: 08px;
+    }
+
+    input[type='text']:focus, .form-textarea:focus {
+        border: 3px solid #D64040;
+    }
+
+.form-second-column div:first-child {
+    margin-left: 10px;
+}
+
+    .form-second-column div:first-child > label {
+        margin-left: 90px;
+        font-weight: bold;
+        font-size: 13px;
+    }
+
+    .form-second-column div:first-child input[type='file'] {
+        border: 2px dashed var(--azul);
+        padding: 12px;
+        color: red;
+        background-color: white;
+        text-align: center;
+        font-weight: bold;
+        width: 285px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+/*Formulario footer*/
+
+.form-footer > * {
+    display: block;
+    margin-top: 11px;
+    height: 50px;
+    background-color: white;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 25px;
+    transition: 850ms;
+}
+
+#confirmar {
+    border: 3px solid green;
+    padding: 3px;
+    width: 370px;
+    color: green;
+}
+
+#cancelar {
+    border: 3px solid red;
+    padding: 5px;
+    width: 50%;
+    color: red;
+    margin-left: 69px;
+}
+
+#confirmar:hover {
+    background-color: green;
+    color: white;
+}
+
+#cancelar:hover {
+    background-color: red;
+    color: white;
+}
