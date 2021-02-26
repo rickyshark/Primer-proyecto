@@ -1,4 +1,5 @@
 ﻿using ApiSitio.Entities;
+using ApiSitio.Models;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -17,5 +18,7 @@ namespace ApiSitio.Contexts
         public DbSet<Correo> Correo { get; set; }
         public DbSet<Report_Offer> Report_Offer { get; set; }
         public DbSet<Offer_Job> Offer_Job { get; set; }
+        public DbSet<Offer_Job_Model> Offer_Job_Model { get; set; }
+        public DbSet<Categoria> Categoria { get; set; }
     }
 }

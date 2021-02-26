@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\monte\\Source\\Repos\\Primer-proyecto\\ApiSitio\\ApiSitio.csproj": {}
+    "C:\\Users\\Legnar Acv2\\Documents\\Programación 3\\ApiSitio\\ApiSitio\\ApiSitio.csproj": {}
   },
   "projects": {
-    "C:\\Users\\monte\\Source\\Repos\\Primer-proyecto\\ApiSitio\\ApiSitio.csproj": {
+    "C:\\Users\\Legnar Acv2\\Documents\\Programación 3\\ApiSitio\\ApiSitio\\ApiSitio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\monte\\Source\\Repos\\Primer-proyecto\\ApiSitio\\ApiSitio.csproj",
+        "projectUniqueName": "C:\\Users\\Legnar Acv2\\Documents\\Programación 3\\ApiSitio\\ApiSitio\\ApiSitio.csproj",
         "projectName": "ApiSitio",
-        "projectPath": "C:\\Users\\monte\\Source\\Repos\\Primer-proyecto\\ApiSitio\\ApiSitio.csproj",
-        "packagesPath": "C:\\Users\\monte\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\monte\\Source\\Repos\\Primer-proyecto\\ApiSitio\\obj\\",
+        "projectPath": "C:\\Users\\Legnar Acv2\\Documents\\Programación 3\\ApiSitio\\ApiSitio\\ApiSitio.csproj",
+        "packagesPath": "C:\\Users\\Legnar Acv2\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Legnar Acv2\\Documents\\Programación 3\\ApiSitio\\ApiSitio\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\monte\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Legnar Acv2\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -30,6 +30,7 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
             "projectReferences": {}
           }
         },
@@ -41,6 +42,7 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "dependencies": {
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
@@ -69,7 +71,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }
