@@ -46,10 +46,10 @@ namespace ApiSitio.Controllers
                 context.SaveChanges();
                 return Ok();
             }
-            catch (Exception)
+            catch (Exception ex)
             {
 
-                return BadRequest();
+                return BadRequest(ex.Message);
             }
 
         }
@@ -67,10 +67,10 @@ namespace ApiSitio.Controllers
                 }
                 return Ok();
             }
-            catch (Exception)
+            catch (Exception ex)
             {
 
-                return BadRequest();
+                return BadRequest(ex.Message);
             }
         }
 
@@ -89,10 +89,10 @@ namespace ApiSitio.Controllers
                 return Ok();
              
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                return BadRequest();
-              
+                return BadRequest(ex.Message);
+
             }
         }
     }

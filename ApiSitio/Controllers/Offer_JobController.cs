@@ -1,5 +1,6 @@
 ﻿using ApiSitio.Contexts;
 using ApiSitio.Entities;
+using ApiSitio.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -21,21 +22,74 @@ namespace ApiSitio.Controllers
         }
         // GET: api/<Offer_JobController>
         [HttpGet]
-        public IEnumerable<dynamic> Get()
+        public List<Offer_Job_Model> Get()
         {
-            var Oferta_With_User_Information = context.Offer_Job.Join(context.Usuario1, Offer => Offer.Id_Usuario, User => User.ID, (Offer, User) => new { Offer, User.Email_emp, User.URL, User.Telefono, User.Email }).ToList();
+            var ofertas = context.Offer_Job.Join(context.Usuario1,
+                Ofert => Ofert.Id_Usuario,
+                user => user.ID,
+                (Ofert, user) => new { Ofert, user })
 
-            List<dynamic> dynamics = new List<dynamic>();
-            dynamics.Add(Oferta_With_User_Information);
+                .Join(context.Categoria,
+                Ofer_Job => Ofer_Job.Ofert.Id_Categoria,
+                Categ => Categ.id,
+                (Offer_Job, Categ) => new { Offer_Job, Categ })
 
-            return dynamics;
+                .Select(oferta_join => new Offer_Job_Model
+                (
+                    oferta_join.Offer_Job.Ofert.Id,
+                    oferta_join.Offer_Job.Ofert.Posicion,
+                    oferta_join.Offer_Job.Ofert.Tipo,
+                    oferta_join.Categ.NombreCategoria,
+                    oferta_join.Offer_Job.Ofert.Descripcion,
+                    oferta_join.Offer_Job.Ofert.Requisitos,
+                    oferta_join.Offer_Job.Ofert.Compañia,
+                    oferta_join.Offer_Job.Ofert.Fecha,
+                    oferta_join.Offer_Job.Ofert.Logo,
+                    oferta_join.Offer_Job.Ofert.Ciudad,
+                    oferta_join.Offer_Job.user.Nombre,
+                    oferta_join.Offer_Job.user.Apellido,
+                    oferta_join.Offer_Job.user.Telefono,
+                    oferta_join.Offer_Job.user.URL,
+                    oferta_join.Offer_Job.user.Email_emp,
+                    oferta_join.Offer_Job.user.Email
+                )).ToList();
+            return ofertas;
         }
         // GET api/<Offer_JobController>/5
         [HttpGet("{ID}")]
-        public Offer_Job Get(int ID)
+        public Offer_Job_Model Get(int ID)
         {
-            var offerJob = context.Offer_Job.FirstOrDefault(x => x.Id == ID);
-            return offerJob;
+            var ofertas = context.Offer_Job.Join(context.Usuario1,
+                Ofert => Ofert.Id_Usuario,
+                user => user.ID,
+                (Ofert, user) => new { Ofert, user })
+
+                .Join(context.Categoria,
+                Ofer_Job => Ofer_Job.Ofert.Id_Categoria,
+                Categ => Categ.id,
+                (Offer_Job, Categ) => new { Offer_Job, Categ })
+
+                .Select(oferta_join => new Offer_Job_Model
+                (
+                    oferta_join.Offer_Job.Ofert.Id,
+                    oferta_join.Offer_Job.Ofert.Posicion,
+                    oferta_join.Offer_Job.Ofert.Tipo,
+                    oferta_join.Categ.NombreCategoria,
+                    oferta_join.Offer_Job.Ofert.Descripcion,
+                    oferta_join.Offer_Job.Ofert.Requisitos,
+                    oferta_join.Offer_Job.Ofert.Compañia,
+                    oferta_join.Offer_Job.Ofert.Fecha,
+                    oferta_join.Offer_Job.Ofert.Logo,
+                    oferta_join.Offer_Job.Ofert.Ciudad,
+                    oferta_join.Offer_Job.user.Nombre,
+                    oferta_join.Offer_Job.user.Apellido,
+                    oferta_join.Offer_Job.user.Telefono,
+                    oferta_join.Offer_Job.user.URL,
+                    oferta_join.Offer_Job.user.Email_emp,
+                    oferta_join.Offer_Job.user.Email
+                )).ToList().FirstOrDefault(x => x.Id == ID);
+
+            return ofertas;
         }
         // POST api/<Offer_JobController>
         [HttpPost]
