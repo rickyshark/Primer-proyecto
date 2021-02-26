@@ -11,6 +11,7 @@
 
 .second-body {
     background-color: #003462;
+    min-height: 18px;
 }
 
 .header-padre{
@@ -24,7 +25,7 @@ footer{
 .container {
     background-color: white;
     width: 1029px;
-    height: 790px;
+    min-height: 790px;
     margin: 0px auto;
     margin-top: 30px;
     border-radius: 60px 60px 60px 60px;
@@ -86,14 +87,24 @@ section {
     margin-top: 18px;
 }
 
-.form-container > form > div > label {
-    display: block;
+.form-container > form > div > div {
+    display: flex;    
+    align-items:center;
+}
+
+label {
     font-weight: bold;
     color: #332E2E;
 }
 
 .sugerencia {
     color: gray;
+}
+
+.text-danger{
+    color:red;
+    font-weight:bold;
+    font-size:10px;
 }
 
 input[type='text'], input[type='password'] {
@@ -104,7 +115,7 @@ input[type='text'], input[type='password'] {
     font-size: 16px;
     border: none;
     border-bottom: 3px solid #67A5E2;
-    color: darkorange;
+    color: #9A4003;
 }
 
     input[type='text']:focus, input[type='password']:focus {

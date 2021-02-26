@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using MVC_Proyect.Models;
 
 namespace MVC_Proyect.Controllers
@@ -10,58 +11,65 @@ namespace MVC_Proyect.Controllers
     public class AccesoController : Controller
     {
         //Vista del Login para iniciar sesion
-        public IActionResult Login(Usuario1 user)
+        [HttpGet]
+        public ActionResult Login()
         {
-            return View(user);
+            return View();
         }
 
         // Metodo para comprobar si x usuario existe 
-        public IActionResult TryLogin(Usuario1 user)
+        [HttpPost]
+        public async Task<IActionResult> Login(Usuario1 user)
         {
             // metodo para validar
 
-           return RedirectToAction("Login", user);
+           return View();
         }
 
         // Vista para el registro 
-        public IActionResult Register(Usuario1 user)
+        [HttpGet]
+        public ActionResult Register()
         {
-            return View(user);
+            return View();
         }
 
+        // Insertar registro
         [HttpPost]
-        public IActionResult TryRegister(Usuario1 user)
+        public async Task<ActionResult> Register(Usuario1 user)
         {
             if (ModelState.IsValid)
             {
-               return RedirectToAction(""); //donde corresponda
+                TempData["Notificacion"] = await user.Post(user);
+                return View();
             }
 
-            return RedirectToAction("Register", user); 
+            return View(user); 
         }
 
 
         /*Vista del formulario para postear el trabajo*/
-        public IActionResult Form(Offer_Job offer_Job)
+        [HttpGet]
+        public async Task<IActionResult> PostJob()
         {
-            return View(offer_Job);
+            ViewData["Listado_Categorias"] = await LoadResource.DropDownListCategorias();
+            return View();
         }
 
-        /*POST*/
-        [HttpPost]
-        public IActionResult PostJob(Offer_Job offer_Job)
+        /*Postear oferta*/
+        public async Task<IActionResult> PostJob(Offer_Job offer_Job)
         {
             if (ModelState.IsValid)
             {
                 TempData["Notificacion"] = offer_Job.Post();
-                return RedirectToAction("");
+                return RedirectToAction(""); // donde corresponda
             }
 
-            return RedirectToAction("Form", offer_Job);
+            ViewData["Listado_Categorias"] = await LoadResource.DropDownListCategorias();
+            return View(offer_Job);
         }
 
-        /*PUT*/
-        public IActionResult PutJob(Offer_Job offer_Job)
+        /*Actualizar oferta*/
+        public async Task<IActionResult> PutJob(Offer_Job offer_Job)
         {
             if (ModelState.IsValid)
             {
@@ -69,15 +77,34 @@ namespace MVC_Proyect.Controllers
                 return RedirectToAction(""); //donde corresponda
             }
 
-            return RedirectToAction("Form", offer_Job);
+            return RedirectToAction("PostJob", offer_Job);
         }
 
-        /*DELETE*/
-        public IActionResult DeleteJob(Offer_Job id_oferta)
+        /*Eliminar oferta*/
+        public async Task<IActionResult> DeleteJob(Offer_Job id_oferta)
         {
-            TempData["Notificacion"] = id_oferta.Delete(id_oferta.Id);
+            TempData["Notificacion"] = id_oferta.Delete(id_oferta.id);
             return RedirectToAction(""); //donde corresponda
         }
-
+    
     }
+
+    public static class LoadResource
+    {
+        public static async Task<List<SelectListItem>> DropDownListCategorias()
+        {
+            var listadoCategorias = await new Categoria().Get();
+
+            var dropdownListCategorias = listadoCategorias.ToList().ConvertAll(d =>
+             new SelectListItem()
+             {
+                 Text = d.nombreCategoria,
+                 Value = d.Id.ToString(),
+                 Selected = false
+             });
+
+            return dropdownListCategorias;
+        }
+    }
+
  }
