@@ -1,4 +1,5 @@
-﻿
+﻿@model Usuario1
+
 @{
     ViewData["Title"] = "Autenticacion";
 }
@@ -28,22 +29,21 @@
                         <h1>WELCOME</h1>
                     </header>
 
-                    <form action="">
-
+                    @using (Html.BeginForm("TryLogin", "Acceso", FormMethod.Post))
+                    {
                         <div>
-                            <input type="text" name="usuario" placeholder="Username" autocomplete="off">
+                            @Html.TextBoxFor(u => u.Username, null, new { Placeholder = "Username", Autocomplete = "off" }) &nbsp;&nbsp;
                         </div>
 
                         <div>
-                            <input type="password" name="clave" placeholder="Password">
+                            @Html.TextBoxFor(u => u.Contraseña, null, new { Placeholder = "Password", Type = "Password" }) &nbsp;&nbsp;
                         </div>
 
-                        <div>
-                            <input type="button" name="" value="INICIAR">
-                        </div>
-                    </form>
-                    <a href="#">
-                        <button id="registrarse-link">REGISTRARSE</button>
+                        <button type="submit" name="" class="login-button">Iniciar</button>
+                    }
+
+                    <a href='@Url.Action("Register", "Acceso")'>
+                    <button id="registrarse-link">Registrarse</button>
                     </a>
                 </div>
 

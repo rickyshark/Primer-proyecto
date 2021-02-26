@@ -53,10 +53,10 @@ namespace MVC_Proyect.Models
             var Listado = JsonConvert.DeserializeObject<List<Report_Offer>>(json);
             return Listado;
         }
-
-        public async Task<string> Delete()
+        
+        public async Task<string> Delete(int id)
         {
-            RESPUESTA_HTTP = await PETICION_HTTP.DeleteAsync(URL + DIRECTORIO_API + "/" + Id);
+            RESPUESTA_HTTP = await PETICION_HTTP.DeleteAsync(URL + DIRECTORIO_API + "/" + id);
 
             if (RESPUESTA_HTTP.IsSuccessStatusCode)
                 return MoldeNotificaciones.DevolverNotificacion(

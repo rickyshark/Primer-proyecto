@@ -19,9 +19,11 @@ namespace MVC_Proyect.Models
         public string Contraseña { get; set; }
         public string Email { get; set; }
         public string Rol { get; set; }
-        public int Telefono { get; set; }
+        public string Telefono { get; set; }
+        public string Url { get; set; }
         public string Email_emp { get; set; }
         public string Username { get; set; }
+
         
         public Usuario1()
         {
@@ -61,9 +63,9 @@ namespace MVC_Proyect.Models
             return Listado;
         }
 
-        public async Task<string> Delete()
+        public async Task<string> Delete(int id)
         {           
-            RESPUESTA_HTTP = await PETICION_HTTP.DeleteAsync(URL + DIRECTORIO_API + "/" + ID);
+            RESPUESTA_HTTP = await PETICION_HTTP.DeleteAsync(URL + DIRECTORIO_API + "/" + id);
 
             if (RESPUESTA_HTTP.IsSuccessStatusCode)
                 return MoldeNotificaciones.DevolverNotificacion(

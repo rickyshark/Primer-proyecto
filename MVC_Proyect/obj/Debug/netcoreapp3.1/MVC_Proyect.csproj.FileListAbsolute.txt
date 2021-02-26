@@ -109,5 +109,5 @@ C:\Users\justi\OneDrive\Escritorio\Proyecto2\MVC_Proyect\obj\Debug\netcoreapp3.1
 C:\Users\justi\OneDrive\Escritorio\Proyecto2\MVC_Proyect\obj\Debug\netcoreapp3.1\MVC_Proyect.dll
 C:\Users\justi\OneDrive\Escritorio\Proyecto2\MVC_Proyect\obj\Debug\netcoreapp3.1\MVC_Proyect.pdb
 C:\Users\justi\OneDrive\Escritorio\Proyecto2\MVC_Proyect\obj\Debug\netcoreapp3.1\MVC_Proyect.genruntimeconfig.cache
-C:\Users\justi\OneDrive\Escritorio\Proyecto2\MVC_Proyect\obj\Debug\netcoreapp3.1\MVC_Proyect.csprojAssemblyReference.cache
 C:\Users\justi\OneDrive\Escritorio\Proyecto2\MVC_Proyect\obj\Debug\netcoreapp3.1\Razor\Views\Acceso\Form.cshtml.g.cs
+C:\Users\justi\OneDrive\Escritorio\Proyecto2\MVC_Proyect\obj\Debug\netcoreapp3.1\MVC_Proyect.csprojAssemblyReference.cache

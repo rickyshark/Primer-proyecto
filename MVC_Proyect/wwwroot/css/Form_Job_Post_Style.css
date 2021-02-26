@@ -13,7 +13,7 @@
 
 .main-container {
     width: 1004px;
-    min-height: 50px;
+    min-height: 45px;
     margin: 25px auto;
     border: 3px solid var(--azul);
     border-radius: 9px;

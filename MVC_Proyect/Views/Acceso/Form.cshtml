@@ -23,30 +23,28 @@
         <main>
             <section class="section-formulario">
 
-               @using (Html.BeginForm("Acceso", "PostJob", FormMethod.Post))
+                @using (Html.BeginForm("PostJob", "Acceso", FormMethod.Post))
                 {
                     <div class="form-header">
 
-                        <select name="">
-                            <option value="">Categoria</option>
-                        </select>
+                        @Html.DropDownList("Categoria", new SelectList("PONER CATEGORIAS AQUI"), "Categorias")
 
                         <div>
                             <h2>Tipo</h2>
 
                             <ul class="lista-tipo">
                                 <li>
-                                    <input type="radio" id="male" name="gender" value="male" class="radio-buttons">
+                                    @Html.RadioButtonFor(o => o.Tipo, "Full-Time")
                                     <label for="male">Full-time</label>
                                 </li>
 
                                 <li>
-                                    <input type="radio" id="male" name="gender" value="male" class="radio-buttons">
+                                    @Html.RadioButtonFor(o => o.Tipo, "Part-Time")
                                     <label for="male">Part-time</label>
                                 </li>
 
                                 <li>
-                                    <input type="radio" id="male" name="gender" value="male" class="radio-buttons">
+                                    @Html.RadioButtonFor(o => o.Tipo, "Freelance")
                                     <label for="male">Freelance</label>
                                 </li>
                             </ul>
@@ -62,8 +60,7 @@
                             <div class="form-piece-text">
                                 <label class="form-label-first-column">Compañia <span class="obligatorio">*</span></label>
                                 <div>
-                                    @*@Html.TextBoxFor(j => j.c, null, new { @class = "form-control", placeholder = "APELLIDO", @Id = "lastnameUpdate" })*@
-                                    <input type="text" id="name" name="name" placeholder="Compañia" autocomplete="off">   &nbsp;&nbsp;
+                                    @Html.TextBoxFor(o => o.Compania, null, new { @class = "form-control", placeholder = "Compañia" }) &nbsp;&nbsp;
                                     <img src="https://image.flaticon.com/icons/png/512/1962/1962551.png" alt="icon-company">
                                 </div>
                             </div>
@@ -71,7 +68,7 @@
                             <div class="form-piece-text">
                                 <label class="form-label-first-column">Posicion <span class="obligatorio">*</span></label>
                                 <div>
-                                    <input type="text" id="name" name="name" placeholder="Posicion" autocomplete="off">   &nbsp;&nbsp;
+                                    @Html.TextBoxFor(o => o.Posicion, null, new { Placeholder = "Posicion" }) &nbsp;&nbsp;
                                     <img src="https://image.flaticon.com/icons/png/512/535/535335.png" alt="icon-rol">
                                 </div>
                             </div>
@@ -79,7 +76,7 @@
                             <div class="form-piece-text">
                                 <label class="form-label-first-column">Descripcion <span class="obligatorio">*</span></label>
                                 <div>
-                                    <textarea class="form-textarea" placeholder="Descripcion" autocomplete="off"></textarea>   &nbsp;&nbsp;
+                                    @Html.TextAreaFor(o => o.Descripcion, new { @class = "form-textarea", Placeholder = "Descripcion" }) &nbsp;&nbsp;
                                     <img src="https://image.flaticon.com/icons/png/512/124/124043.png" alt="icon-pencil">
                                 </div>
                             </div> <br>
@@ -87,7 +84,7 @@
                             <div class="form-piece-text">
                                 <label class="form-label-first-column">Requisitos <span class="obligatorio">*</span></label>
                                 <div>
-                                    <textarea class="form-textarea" placeholder="Requisitos" autocomplete="off"></textarea>   &nbsp;&nbsp;
+                                    @Html.TextAreaFor(o => o.Requisitos, new { @class = "form-textarea", Placeholder = "Requisitos" }) &nbsp;&nbsp;
                                     <img src="https://image.flaticon.com/icons/png/128/4059/4059838.png" alt="icon-required">
                                 </div>
                             </div>
@@ -99,7 +96,7 @@
                             <div class="form-piece-text">
                                 <label>Logotipo empresarial </label>
                                 <div>
-                                    <input type="file" name="logo" accept="image/png, image/jpeg" title="seleccionar png/jpeg"> &nbsp;&nbsp;&nbsp;
+                                    @Html.TextBoxFor(o => o.Logo, new { type = "file" }) &nbsp;&nbsp;
                                     <img src="https://image.flaticon.com/icons/png/128/2345/2345409.png" alt="icon-company">
                                 </div>
                             </div> <br>
@@ -107,7 +104,7 @@
                             <div class="form-piece-text">
                                 <label class="form-label-second-column">Ubicacion / Direccion <span class="obligatorio">*</span></label>
                                 <div>
-                                    <input type="text" id="name" name="name" placeholder="Ubicacion" autocomplete="off">   &nbsp;&nbsp;
+                                    @Html.TextBoxFor(o => o.Ciudad, null, new { Placeholder = "Ciudad" }) &nbsp;&nbsp;
                                     <img src="https://image.flaticon.com/icons/png/512/1246/1246467.png" alt="icon-location">
                                 </div>
                             </div>
@@ -115,7 +112,7 @@
                             <div class="form-piece-text">
                                 <label class="form-label-second-column">Sitio web Empresa</label>
                                 <div>
-                                    <input type="text" id="name" name="name" placeholder="URL" autocomplete="off">   &nbsp;&nbsp;
+                                    @Html.TextBoxFor(o => o.Url, null, new { Placeholder = "URL" }) &nbsp;&nbsp;
                                     <img src="https://image.flaticon.com/icons/png/512/1674/1674664.png" alt="icon-web">
                                 </div>
                             </div>
@@ -123,24 +120,23 @@
                             <div class="form-piece-text">
                                 <label class="form-label-second-column">Correo electronico <span class="obligatorio">*</span></label>
                                 <div>
-                                    <input type="text" id="name" name="name" placeholder="Correo" autocomplete="off">   &nbsp;&nbsp;
+                                    @Html.TextBoxFor(o => o.Email, null, new { Placeholder = "Email" }) &nbsp;&nbsp;
                                     <img src="https://i.pinimg.com/originals/80/09/29/800929944b228b1569c308b81e810b60.png" alt="icon-email">
                                 </div>
                             </div>
 
                             <div class="form-footer">
-                                <button type="button" id="confirmar">Publicar</button>
-                                <button type="button" id="cancelar">Cancelar</button>
+                                <button type="submit" id="confirmar">Publicar</button>
+                                <button id="cancelar" asp-controller="Job" asp-action="ScreenPrincipalView">Cancelar</button>
                             </div>
 
                         </div>
                     </div>
 
-                }
+                 }
 
             </section>
         </main>
 
     </div>
-
 </body>

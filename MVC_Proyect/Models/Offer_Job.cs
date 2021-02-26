@@ -16,11 +16,15 @@ namespace MVC_Proyect.Models
         public int Id { get; set; }
         public int Id_Usuario { get; set; }
         public int Id_Categoria { get; set; }
+        public string Compania { get; set; }
         public string Tipo { get; set; }
         public int Logo { get; set; }
         public string Posicion { get; set; }
         public string Ciudad { get; set; }
+        public string Url { get; set; }
+        public string Email { get; set; }
         public string Descripcion { get; set; }
+        public string Requisitos { get; set; }
         [DisplayFormat(DataFormatString = "{0:yyyy/dd/MM}", ApplyFormatInEditMode = true)]
         public DateTime? Fecha { get; set; }
 
@@ -61,9 +65,9 @@ namespace MVC_Proyect.Models
             return Listado;
         }
 
-        public async Task<string> Delete()
+        public async Task<string> Delete(int id)
         {
-            RESPUESTA_HTTP = await PETICION_HTTP.DeleteAsync(URL + DIRECTORIO_API + "/" + Id);
+            RESPUESTA_HTTP = await PETICION_HTTP.DeleteAsync(URL + DIRECTORIO_API + "/" + id);
 
             if (RESPUESTA_HTTP.IsSuccessStatusCode)
                 return MoldeNotificaciones.DevolverNotificacion(
