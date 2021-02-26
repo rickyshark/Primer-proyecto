@@ -69,7 +69,6 @@ form>* {
 /* Seccion Lista de Empleos Recientes */
 
 .job {
-    max-width: 350px;
     margin: 30px;
     background-color: #ffffff;
     padding: 20px;
@@ -78,9 +77,12 @@ form>* {
 
 .job-header {
     display: flex;
-    text-align: center;
     align-items: center;
     justify-content: space-between;
+}
+
+.job-header>* {
+    margin-left: 14px;
 }
 
 .job-header>div>* {
