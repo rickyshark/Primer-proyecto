@@ -15,13 +15,19 @@ namespace MVC_Proyect.Controllers
     {
         public async Task<IActionResult> ScreenPrincipalView()
         {            
-            return View();
+            Offer_Job Job = new Offer_Job();
+            var listado = await Job.Get();
+            
+            return View(listado);
         }
 
         [HttpGet]
-        public IActionResult SearchJob()
+        public async Task<IActionResult> SearchJob()
         {
-            return View();
+            Offer_Job Job = new Offer_Job();
+            var listado = await Job.Get();
+            
+            return View(listado);
         }
        
     }

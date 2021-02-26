@@ -5703,31 +5703,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Legnar Acv2\\.nuget\\packages\\": {},
-    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
+    "/home/carlossantos/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Legnar Acv2\\Documents\\Programación 3\\ApiSitio\\ApiSitio\\ApiSitio.csproj",
+      "projectUniqueName": "/home/carlossantos/Documentos/Primer-proyecto-master/ApiSitio/ApiSitio.csproj",
       "projectName": "ApiSitio",
-      "projectPath": "C:\\Users\\Legnar Acv2\\Documents\\Programación 3\\ApiSitio\\ApiSitio\\ApiSitio.csproj",
-      "packagesPath": "C:\\Users\\Legnar Acv2\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Legnar Acv2\\Documents\\Programación 3\\ApiSitio\\ApiSitio\\obj\\",
+      "projectPath": "/home/carlossantos/Documentos/Primer-proyecto-master/ApiSitio/ApiSitio.csproj",
+      "packagesPath": "/home/carlossantos/.nuget/packages/",
+      "outputPath": "/home/carlossantos/Documentos/Primer-proyecto-master/ApiSitio/obj/",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Microsoft\\Xamarin\\NuGet\\"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Legnar Acv2\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "/home/carlossantos/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -5765,6 +5758,20 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[3.1.10, 3.1.10]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Host.linux-x64",
+            "version": "[3.1.12, 3.1.12]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[3.1.0, 3.1.0]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"
@@ -5773,16 +5780,8 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/5.0.103/RuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problem reading the cache file C:\\Users\\Legnar Acv2\\Documents\\Programación 3\\ApiSitio\\ApiSitio\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  }
 }
