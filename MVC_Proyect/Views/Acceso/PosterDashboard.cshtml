@@ -27,7 +27,7 @@
 
         <div class="job-list">
 
-@if(empleos.Count != 0){
+@if(empleos.Count > 0){
 @foreach (var job in empleos){
 
             <div class="job">
@@ -48,14 +48,12 @@
                 </div>
 
                 <a href="" class="job-end rojo">Eliminar</a>
-                <a href="" class="job-end">Editar</a>
             </div>
-}
+ }
 }
         </div>
 
         @if(empleos.Count == 0){
-    
     <p class="no-offer">Aun no ha publicado ninguna oferta!! </p>
 }
     </section>
