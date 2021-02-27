@@ -81,6 +81,23 @@ namespace MVC_Proyect.Models
                     new Tuple<bool, string>(false, REQUEST_ISSUES));            
         }
 
-      
+        public async Task<string> TryLogin()
+        {
+            var json = await PETICION_HTTP.GetStringAsync(URL + DIRECTORIO_API);
+
+            int idUsuario = (JsonConvert.DeserializeObject<List<Usuario1>>(json).
+                Where(x => x.Username == Username && x.Contraseña == Contraseña).
+                Select(x => x.ID).FirstOrDefault());
+                
+            if(idUsuario != 0 && idUsuario.ToString() != null)
+                return MoldeNotificaciones.DevolverNotificacion(
+                          new Tuple<bool, string>(true, "Usuario Logueado con Exito !"));
+            else
+                return MoldeNotificaciones.DevolverNotificacion(
+                    new Tuple<bool, string>(false, "Username o Contraseña Incorrecta"));
+
+        }
+
+
     }
 }

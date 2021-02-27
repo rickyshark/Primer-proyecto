@@ -22,6 +22,7 @@ namespace MVC_Proyect.Controllers
         public async Task<IActionResult> Login(Usuario1 user)
         {
             // metodo para validar
+            TempData["Notificacion"] = await user.TryLogin();
 
            return View();
         }
