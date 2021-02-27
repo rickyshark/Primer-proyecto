@@ -5708,11 +5708,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/carlossantos/Documentos/Primer-proyecto-master/ApiSitio/ApiSitio.csproj",
+      "projectUniqueName": "/home/carlossantos/Escritorio/Primer-proyecto-3/ApiSitio/ApiSitio.csproj",
       "projectName": "ApiSitio",
-      "projectPath": "/home/carlossantos/Documentos/Primer-proyecto-master/ApiSitio/ApiSitio.csproj",
+      "projectPath": "/home/carlossantos/Escritorio/Primer-proyecto-3/ApiSitio/ApiSitio.csproj",
       "packagesPath": "/home/carlossantos/.nuget/packages/",
-      "outputPath": "/home/carlossantos/Documentos/Primer-proyecto-master/ApiSitio/obj/",
+      "outputPath": "/home/carlossantos/Escritorio/Primer-proyecto-3/ApiSitio/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/carlossantos/.nuget/NuGet/NuGet.Config"

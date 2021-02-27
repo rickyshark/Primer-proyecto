@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "JNBeiBpGUW6PRUMmKgBtcteMhcy82Dyls16b9Kdjv8M26s/DcLAoicJpkH8E2zRq2SAB3YQSJ06sMr95UQ7aIw==",
+  "dgSpecHash": "DIxCpOEfO/bc3EsMrAPBNUBi9AuBUTrru3ULVk2TjIjlca0XMOM4JprFGYF1KcxVziiEduLZJdrUP9KLgc3gmA==",
   "success": true,
-  "projectFilePath": "/home/carlossantos/Documentos/Primer-proyecto-master/ApiSitio/ApiSitio.csproj",
+  "projectFilePath": "/home/carlossantos/Escritorio/Primer-proyecto-3/ApiSitio/ApiSitio.csproj",
   "expectedPackageFiles": [
     "/home/carlossantos/.nuget/packages/microsoft.csharp/4.5.0/microsoft.csharp.4.5.0.nupkg.sha512",
     "/home/carlossantos/.nuget/packages/microsoft.data.sqlclient/2.0.1/microsoft.data.sqlclient.2.0.1.nupkg.sha512",

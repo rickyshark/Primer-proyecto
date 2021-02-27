@@ -14,21 +14,48 @@ namespace MVC_Proyect.Controllers
     public class JobController : Controller
     {
         public async Task<IActionResult> ScreenPrincipalView()
-        {            
+        {
             Offer_Job Job = new Offer_Job();
-            var listado = await Job.Get();
-            
-            return View(listado);
+            var lista = await Job.Get();
+            ViewData["Ciudades"] = lista.Select(x => x.Ciudad).ToList();
+            ViewData["Jobs"] = lista;
+
+
+            return View();
         }
 
         [HttpGet]
         public async Task<IActionResult> SearchJob()
         {
             Offer_Job Job = new Offer_Job();
-            var listado = await Job.Get();
-            
-            return View(listado);
+            var resultado = await Job.Get();
+            ViewData["Ciudades"] = resultado.Select(x => x.Ciudad).ToList();
+            ViewData["Jobs"] = resultado;
+
+
+            return View();
         }
-       
+
+
+        [HttpPost]
+        public async Task<IActionResult> SearchJob(Offer_Job job)
+        {
+
+            Offer_Job Job = new Offer_Job();
+            var listado = await Job.Get();
+            ViewData["Ciudades"] = listado.Select(x => x.Ciudad).ToList();
+
+            if (job.Posicion != null)
+                listado = listado.Where(x => x.Posicion == job.Posicion).ToList();
+
+            if (job.Ciudad != "0")
+                listado = listado.Where(x => x.Ciudad == job.Ciudad).ToList();
+
+            ViewData["Jobs"] = listado;
+
+            return View();
+
+        }
+
     }
 }

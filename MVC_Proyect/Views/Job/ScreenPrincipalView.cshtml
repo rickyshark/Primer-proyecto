@@ -1,12 +1,10 @@
-@model List<MVC_Proyect.Models.Offer_Job>
-
+@model MVC_Proyect.Models.Offer_Job
 
 @{
     ViewData["Title"] = "Home - Bolsa de Empleo";
+    var empleos = ViewData["Jobs"] as List<Offer_Job>;
+    var Ciudades = ViewData["Ciudades"] as List<string>;
 }
-
-
-
 
 <link rel="stylesheet" href="~/css/CSStyles.css" />
 <main>
@@ -14,18 +12,22 @@
         <h1>
             <b>Encuentra el empleo</b>
             <br> &nbsp&nbspque siempres has estado <br>
-            <span class="landing-buscando">   Buscando </span>
+            <span class="landing-buscando"> Buscando </span>
         </h1>
 
         <img src="img/landing.svg" alt="landing" width="400px">
     </section>
 
     <section class="search-job">
-        <form action="">
-            <input type="text" name="" id="" placeholder="Nombre del Empleo">
+        <form asp-action="SearchJob" asp-controller="Job" method="POST">
+            <input type="text" name="Posicion" id="" placeholder="Nombre del Empleo">
 
-            <select name="" id="">
-                <option value="">Ubicacion del Empleo </option>
+            <select name="Ciudad" id="">
+                <option value="0">Ubicacion del Empleo </option>
+                @foreach (var x in Ciudades)
+                    {
+                    <option value="@x">@x </option>
+                    }
 
                 <input type="submit" value="Buscar empleo" class="btn-search">
         </form>
@@ -35,35 +37,37 @@
         <h2 class="recent-job-title">Ofertas de empleos recientes:</h2>
         <div class="container">
             <div class="job-list">
-                @foreach (var Job in Model)
-                {                           
-                <div class="job">
-                    <div class="job-header">
+                @foreach (var Job in empleos)
+                {
+                    <div class="job">
+                        <div class="job-header">
 
-                       
-                        <img src="~/img/defaultwork.svg" alt="" width="86px" class="job-logo">
-                        
-                        <div>
-                            <br>
-                            <h2>@Job.Posicion</h2>
-                            <br> <br>
-   
-                            <img src="img/place.svg" alt="" width="18px"><p>&nbsp;@Job.Ciudad&nbsp;&nbsp;&nbsp;&nbsp;</p>
-                            <img src="img/dollar.svg" alt="" width="18px"><p>A discutir&nbsp;&nbsp;&nbsp;&nbsp;</p>
 
+                            <img src="~/img/defaultwork.svg" alt="" width="86px" class="job-logo">
+
+                            <div>
+                                <br>
+                                <h2>@Job.Posicion</h2>
+                                <br> <br>
+
+                                <img src="img/place.svg" alt="" width="18px">
+                                <p>&nbsp;@Job.Ciudad&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                                <img src="img/dollar.svg" alt="" width="18px">
+                                <p>A discutir&nbsp;&nbsp;&nbsp;&nbsp;</p>
+
+                            </div>
                         </div>
+
+                        <div class="job-body">
+                            <p>@Job.Descripcion</p>
+                        </div>
+
+                        <a href="" class="job-end">Ver mas</a>
+
                     </div>
-
-                    <div class="job-body">
-                        <p>@Job.Descripcion</p>
-                    </div>
-
-                    <a href="" class="job-end">Ver mas</a>
-
-                </div>
                 }
-                
-                
+
+
             </div>
         </div>
 
