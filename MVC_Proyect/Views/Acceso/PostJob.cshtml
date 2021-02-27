@@ -5,6 +5,8 @@
     ViewData["Title"] = "Form";
 }
 
+@Html.Raw(ViewData["Notificacion"])
+
 <head>
     <link rel="stylesheet" type="text/css" href="~/css/Form_Job_Post_Style.css">
 </head>
@@ -26,8 +28,8 @@
                 @using (Html.BeginForm("PostJob", "Acceso", FormMethod.Post))
                 {
                     <div class="form-header">
-
-                        @Html.DropDownList("Categoria", ViewData["Listado_Categorias"] as List<SelectListItem>, "Categorias")
+                        
+                        @Html.DropDownListFor(x => x.Id_Categoria, ViewData["Listado_Categorias"] as List<SelectListItem>, "Categoria")
 
                         <div>
                             <h2>Tipo</h2>
@@ -58,7 +60,7 @@
                         <div class="form-first-column">
 
                             <div class="form-piece-text">
-                                <label class="form-label-first-column">Compañia <span class="obligatorio">*</span></label>
+                                <label class="form-label-first-column">Compañia <span class="obligatorio"> @Html.ValidationMessageFor(n => n.Compania, null)</span></label>
                                 <div>
                                     @Html.TextBoxFor(o => o.Compania, null, new { @class = "form-control", placeholder = "Compañia" }) &nbsp;&nbsp;
                                     <img src="https://image.flaticon.com/icons/png/512/1962/1962551.png" alt="icon-company">
@@ -66,7 +68,7 @@
                             </div>
 
                             <div class="form-piece-text">
-                                <label class="form-label-first-column">Posicion <span class="obligatorio">*</span></label>
+                                <label class="form-label-first-column">Posicion <span class="obligatorio"> @Html.ValidationMessageFor(n => n.Posicion, null)</span></label>
                                 <div>
                                     @Html.TextBoxFor(o => o.Posicion, null, new { Placeholder = "Posicion" }) &nbsp;&nbsp;
                                     <img src="https://image.flaticon.com/icons/png/512/535/535335.png" alt="icon-rol">
@@ -74,21 +76,20 @@
                             </div>
 
                             <div class="form-piece-text">
-                                <label class="form-label-first-column">Descripcion <span class="obligatorio">*</span></label>
+                                <label class="form-label-first-column">Descripcion <span class="obligatorio"> @Html.ValidationMessageFor(n => n.Descripcion, null)</span></label>
                                 <div>
                                     @Html.TextAreaFor(o => o.Descripcion, new { @class = "form-textarea", Placeholder = "Descripcion" }) &nbsp;&nbsp;
                                     <img src="https://image.flaticon.com/icons/png/512/124/124043.png" alt="icon-pencil">
                                 </div>
                             </div> <br>
 
-                            <div class="form-piece-text">
-                                <label class="form-label-first-column">Requisitos <span class="obligatorio">*</span></label>
-                                <div>
-                                    @Html.TextAreaFor(o => o.Requisitos, new { @class = "form-textarea", Placeholder = "Requisitos" }) &nbsp;&nbsp;
-                                    <img src="https://image.flaticon.com/icons/png/128/4059/4059838.png" alt="icon-required">
-                                </div>
-                            </div>
-
+                                   <div class="form-piece-text">
+                                       <label class="form-label-first-column">Requisitos <span class="obligatorio"> @Html.ValidationMessageFor(n => n.Requisitos, null)</span></label>
+                                       <div>
+                                           @Html.TextAreaFor(o => o.Requisitos, new { @class = "form-textarea", Placeholder = "Requisitos" }) &nbsp;&nbsp;
+                                           <img src="https://image.flaticon.com/icons/png/128/4059/4059838.png" alt="icon-required">
+                                       </div>
+                                   </div>
                         </div>
 
                         <div class="form-second-column">
@@ -101,29 +102,31 @@
                                 </div>
                             </div> <br>
 
-                            <div class="form-piece-text">
-                                <label class="form-label-second-column">Ubicacion / Direccion <span class="obligatorio">*</span></label>
-                                <div>
-                                    @Html.TextBoxFor(o => o.Ciudad, null, new { Placeholder = "Ciudad" }) &nbsp;&nbsp;
-                                    <img src="https://image.flaticon.com/icons/png/512/1246/1246467.png" alt="icon-location">
-                                </div>
-                            </div>
+                                   <div class="form-piece-text">
+                                       <label class="form-label-second-column">Ubicacion / Direccion <span class="obligatorio"> @Html.ValidationMessageFor(n => n.Ciudad, null)</span></label>
+                                       <div>
+                                           @Html.TextBoxFor(o => o.Ciudad, null, new { Placeholder = "Ciudad" }) &nbsp;&nbsp;
+                                           <img src="https://image.flaticon.com/icons/png/512/1246/1246467.png" alt="icon-location">
+                                       </div>
+                                   </div>
 
-                            <div class="form-piece-text">
-                                <label class="form-label-second-column">Sitio web Empresa</label>
-                                <div>
-                                    @Html.TextBoxFor(o => o.Url, null, new { Placeholder = "URL" }) &nbsp;&nbsp;
-                                    <img src="https://image.flaticon.com/icons/png/512/1674/1674664.png" alt="icon-web">
-                                </div>
-                            </div>
+                                   <div class="form-piece-text">
+                                       <label class="form-label-second-column">Sitio web Empresa</label>
+                                       <div>
+                                           @Html.TextBoxFor(o => o.Url, null, new { Placeholder = "URL" }) &nbsp;&nbsp;
+                                           <img src="https://image.flaticon.com/icons/png/512/1674/1674664.png" alt="icon-web">
+                                       </div>
+                                   </div>
 
-                            <div class="form-piece-text">
-                                <label class="form-label-second-column">Correo electronico <span class="obligatorio">*</span></label>
-                                <div>
-                                    @Html.TextBoxFor(o => o.Email, null, new { Placeholder = "Email" }) &nbsp;&nbsp;
-                                    <img src="https://i.pinimg.com/originals/80/09/29/800929944b228b1569c308b81e810b60.png" alt="icon-email">
-                                </div>
-                            </div>
+                                   <div class="form-piece-text">
+
+                                       <label class="form-label-second-column">Correo electronico <span class="obligatorio"> @Html.ValidationMessageFor(n => n.Email, null)</span></label>
+                                       <div>
+                                           @Html.TextBoxFor(o => o.Email, null, new { Placeholder = "Email" }) &nbsp;&nbsp;
+                                           <img src="https://i.pinimg.com/originals/80/09/29/800929944b228b1569c308b81e810b60.png" alt="icon-email">
+                                       </div>
+                                   </div>
+                            <input type="text" name="Fecha" value="@DateTime.Now" hidden="hidden">
 
                             <div class="form-footer">
                                 <button type="submit" id="confirmar">Publicar</button>
@@ -133,7 +136,7 @@
                         </div>
                     </div>
 
-                 }
+                }
 
             </section>
         </main>

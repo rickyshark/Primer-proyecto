@@ -13,14 +13,23 @@ namespace MVC_Proyect.Models
     public class Usuario1 : RequestProperties, IPost, IPut, IDelete
     {
         public int ID { get; set; }
+        [Required(ErrorMessage ="No puede dejar el campo de nombre vacio !")]
         public string Nombre { get; set; }
+        [Required(ErrorMessage = "No puede dejar el campo de apellido vacio !")]
         public string Apellido { get; set; }
+        [Required(ErrorMessage = "No puede dejar el campo de clave vacio !")]
         public string Contraseña { get; set; }
+        [Required(ErrorMessage = "No puede dejar el campo de email vacio !")]
+        [EmailAddress(ErrorMessage = "No es una direccion de correo valido !")]
         public string Email { get; set; }
         public string Rol { get; set; }
+        [Required(ErrorMessage = "No puede dejar el campo de telefono vacio !")]
         public string Telefono { get; set; }
         public string Url { get; set; }
+        [Required(ErrorMessage = "No puede dejar el campo de email empresarial vacio !")]
+        [EmailAddress(ErrorMessage = "No es una direccion de correo valido !")]
         public string Email_emp { get; set; }
+        [Required(ErrorMessage = "No puede dejar el campo de username vacio !")]
         public string Username { get; set; }
         
         public Usuario1()
@@ -28,27 +37,10 @@ namespace MVC_Proyect.Models
             DIRECTORIO_API = "Usuario1";
         }
 
-        public async Task<string> Post(Usuario1 usuario)
+        public async Task<string> Post()
         {
-
-            var usuario2 = new Usuario1
-            {
-                Nombre = usuario.Nombre,
-                Apellido = usuario.Apellido,
-                Username = usuario.Username,
-                Contraseña = usuario.Contraseña,
-                Email = usuario.Email_emp,
-                Email_emp = usuario.Email_emp,
-                Rol = "Poster",
-                Telefono = usuario.Telefono,
-                Url = usuario.Url
-            };
-            var json = JsonConvert.SerializeObject(usuario2);
-            HttpClient httpClient = new HttpClient();
-            var content = new StringContent(json, System.Text.Encoding.UTF8, "application/json");
-            var response = await httpClient.PostAsync("https://webapi-prog3.azurewebsites.net/api/Usuario1", content);
-
-            if (response.IsSuccessStatusCode)
+            RESPUESTA_HTTP = await PETICION_HTTP.PostAsync(URL + DIRECTORIO_API, ContenidoHttp(this));
+            if (RESPUESTA_HTTP.IsSuccessStatusCode)
                 return MoldeNotificaciones.DevolverNotificacion(
                      new Tuple<bool, string>(true, "Te has registrado con exito !"));
             else
@@ -89,9 +81,6 @@ namespace MVC_Proyect.Models
                     new Tuple<bool, string>(false, REQUEST_ISSUES));            
         }
 
-        public Task<string> Post()
-        {
-            throw new NotImplementedException();
-        }
+      
     }
 }

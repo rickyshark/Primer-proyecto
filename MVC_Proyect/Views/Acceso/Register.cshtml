@@ -35,17 +35,17 @@
                         </div>
                     </header>
 
-                   @using (Html.BeginForm("Register", "Acceso", FormMethod.Post))
+                    @using (Html.BeginForm("Register", "Acceso", FormMethod.Post))
                     {
-                    
+
                         <div class="form-text-piece">
                             <div>
                                 <label>Nombre</label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                 @Html.ValidationMessageFor(n => n.Nombre, null, new { @class = "text-danger" })
                             </div>
-                            @Html.TextBoxFor(u => u.Nombre, null, new { Autocomplete = "off" })                  
+                            @Html.TextBoxFor(u => u.Nombre, null, new { Autocomplete = "off" })
                         </div>
-                    
+
                         <div class="form-text-piece">
                             <div>
                                 <label>Apellido</label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -59,7 +59,7 @@
                                 <label>Email personal</label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                 @Html.ValidationMessageFor(n => n.Email, null, new { @class = "text-danger" })
                             </div>
-                            @Html.TextBoxFor(u => u.Email, null, new { Autocomplete = "off" }) 
+                            @Html.TextBoxFor(u => u.Email, null, new { Autocomplete = "off" })
                         </div>
 
                         <div class="form-text-piece">
@@ -67,7 +67,7 @@
                                 <label>Email de empresa</label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                 @Html.ValidationMessageFor(n => n.Email_emp, null, new { @class = "text-danger" })
                             </div>
-                            @Html.TextBoxFor(u => u.Email_emp, null, new { Autocomplete = "off" }) 
+                            @Html.TextBoxFor(u => u.Email_emp, null, new { Autocomplete = "off" })
                         </div>
 
                         <div class="form-text-piece">
@@ -100,12 +100,11 @@
                             </div>
                             @Html.TextBoxFor(u => u.Contraseña, null, new { Autocomplete = "off" }) &nbsp;&nbsp;
                         </div>
-                        
-                        @Html.HiddenFor(u=> u.Rol, "Poster")                        
-                       <div>                        
-                           <button type="submit" id="registrarse-btn">Listo</button>                        
-                       </div>
-                   }
+                        <input type="text" name="Rol" value="Poster" hidden="hidden"> //Rol por defecto del usuario que se registra (no cambiar) !
+                        <div>
+                            <button type="submit" id="registrarse-btn">Listo</button>
+                        </div>
+                    }
                 </div>
 
             </section>

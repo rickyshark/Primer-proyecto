@@ -39,7 +39,7 @@ namespace MVC_Proyect.Controllers
         {
             if (ModelState.IsValid)
             {
-                TempData["Notificacion"] = await user.Post(user);
+                TempData["Notificacion"] = await user.Post();
                 return View();
             }
 
@@ -49,7 +49,7 @@ namespace MVC_Proyect.Controllers
 
         /*Vista del formulario para postear el trabajo*/
         [HttpGet]
-        public async Task<IActionResult> PostJob()
+        public async Task<ActionResult> PostJob()
         {
             ViewData["Listado_Categorias"] = await LoadResource.DropDownListCategorias();
             return View();
@@ -61,7 +61,7 @@ namespace MVC_Proyect.Controllers
             if (ModelState.IsValid)
             {
                 TempData["Notificacion"] = offer_Job.Post();
-                return RedirectToAction(""); // donde corresponda
+                return View(); // donde corresponda
             }
 
             ViewData["Listado_Categorias"] = await LoadResource.DropDownListCategorias();

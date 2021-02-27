@@ -6071,41 +6071,20 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Legnar Acv2\\.nuget\\packages\\": {},
-    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
+    "C:\\Users\\justi\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-<<<<<<< HEAD
-<<<<<<< HEAD
-      "projectUniqueName": "C:\\Users\\Legnar Acv2\\Documents\\Programación 3\\ApiSitio\\MVC_Proyect\\MVC_Proyect.csproj",
+      "projectUniqueName": "C:\\Users\\justi\\OneDrive\\Escritorio\\Proyecto3\\MVC_Proyect\\MVC_Proyect.csproj",
       "projectName": "MVC_Proyect",
-      "projectPath": "C:\\Users\\Legnar Acv2\\Documents\\Programación 3\\ApiSitio\\MVC_Proyect\\MVC_Proyect.csproj",
-      "packagesPath": "C:\\Users\\Legnar Acv2\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Legnar Acv2\\Documents\\Programación 3\\ApiSitio\\MVC_Proyect\\obj\\",
-=======
-      "projectUniqueName": "/home/carlossantos/Escritorio/Primer-proyecto-3/MVC_Proyect/MVC_Proyect.csproj",
-      "projectName": "MVC_Proyect",
-      "projectPath": "/home/carlossantos/Escritorio/Primer-proyecto-3/MVC_Proyect/MVC_Proyect.csproj",
-      "packagesPath": "/home/carlossantos/.nuget/packages/",
-      "outputPath": "/home/carlossantos/Escritorio/Primer-proyecto-3/MVC_Proyect/obj/",
->>>>>>> 7d42f4abc39a59217f36a87da5a8b22f7b005fe4
-=======
-      "projectUniqueName": "/home/carlossantos/Escritorio/Primer-proyecto-3/MVC_Proyect/MVC_Proyect.csproj",
-      "projectName": "MVC_Proyect",
-      "projectPath": "/home/carlossantos/Escritorio/Primer-proyecto-3/MVC_Proyect/MVC_Proyect.csproj",
-      "packagesPath": "/home/carlossantos/.nuget/packages/",
-      "outputPath": "/home/carlossantos/Escritorio/Primer-proyecto-3/MVC_Proyect/obj/",
->>>>>>> 7d42f4abc39a59217f36a87da5a8b22f7b005fe4
+      "projectPath": "C:\\Users\\justi\\OneDrive\\Escritorio\\Proyecto3\\MVC_Proyect\\MVC_Proyect.csproj",
+      "packagesPath": "C:\\Users\\justi\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\justi\\OneDrive\\Escritorio\\Proyecto3\\MVC_Proyect\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Microsoft\\Xamarin\\NuGet\\"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Legnar Acv2\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "C:\\Users\\justi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
@@ -6116,7 +6095,6 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "targetAlias": "netcoreapp3.1",
           "projectReferences": {}
         }
       },
@@ -6128,7 +6106,6 @@
     },
     "frameworks": {
       "netcoreapp3.1": {
-        "targetAlias": "netcoreapp3.1",
         "dependencies": {
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
             "target": "Package",
@@ -6157,7 +6134,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
       }
     }
   }

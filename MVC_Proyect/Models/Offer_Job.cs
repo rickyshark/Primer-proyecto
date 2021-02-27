@@ -1,4 +1,4 @@
-﻿using System;
+﻿    using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
@@ -15,16 +15,25 @@ namespace MVC_Proyect.Models
         [Key]
         public int id { get; set; }
         public int Id_Usuario { get; set; }
+        [Required(ErrorMessage = "*")]
         public int Id_Categoria { get; set; }
+        [Required(ErrorMessage = "*")]
         public string Compania { get; set; }
+        [Required(ErrorMessage = "*")]
         public string Tipo { get; set; }
         public int Logo { get; set; }
+        [Required(ErrorMessage = "*")]
         public string Posicion { get; set; }
+        [Required(ErrorMessage = "*")]
         public string Ciudad { get; set; }
         public string Url { get; set; }
+        [Required(ErrorMessage = "*")]
         public string Email { get; set; }
+        [Required(ErrorMessage = "*")]
         public string Descripcion { get; set; }
+        [Required(ErrorMessage = "*")]
         public string Requisitos { get; set; }
+
         [DisplayFormat(DataFormatString = "{0:yyyy/dd/MM}", ApplyFormatInEditMode = true)]
         public DateTime? Fecha { get; set; }
 
