@@ -10,7 +10,7 @@ namespace MVC_Proyect.Models
 {
     public class Categoria : RequestProperties, IPost, IPut, IDelete
     {
-        public int Id { get; set; }
+        public int id { get; set; }
         public string nombreCategoria { get; set; }
 
         public Categoria()

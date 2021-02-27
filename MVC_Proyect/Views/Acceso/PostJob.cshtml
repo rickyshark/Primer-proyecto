@@ -29,7 +29,7 @@
                 {
                     <div class="form-header">
                         
-                        @Html.DropDownListFor(x => x.Id_Categoria, ViewData["CategoriasList"] as List<SelectListItem>, "Categoria")
+                        @Html.DropDownListFor(x => x.Id_Categoria, ViewData["Listado_Categorias"] as List<SelectListItem>, "Categoria")
 
                         <div>
                             <h2>Tipo</h2>
@@ -105,7 +105,7 @@
                                    <div class="form-piece-text">
                                        <label class="form-label-second-column">Provincia / Ubicacion <span class="obligatorio"> @Html.ValidationMessageFor(n => n.Ciudad, null)</span></label>
                                        <div>
-                                           @Html.DropDownListFor(o => o.Ciudad, ViewData["ProvinciasList"] as List<SelectListItem>, new { Placeholder = "Provincia" }) &nbsp;&nbsp;
+                                           @Html.DropDownListFor(o => o.Ciudad, ViewData["Listado_Provincias"] as List<SelectListItem>, "Provincia") &nbsp;&nbsp;
                                            <img src="https://image.flaticon.com/icons/png/512/1246/1246467.png" alt="icon-location">
                                        </div>
                                    </div>

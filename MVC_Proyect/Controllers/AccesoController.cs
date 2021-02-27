@@ -11,7 +11,6 @@ namespace MVC_Proyect.Controllers
     public class AccesoController : Controller
     {
 
-
         public async Task<ActionResult> PosterDashboard(int id)
         {
             Offer_Job Job = new Offer_Job();
@@ -70,9 +69,10 @@ namespace MVC_Proyect.Controllers
 
         /*Vista del formulario para postear el trabajo*/
         [HttpGet]
-        public async Task<ActionResult> PostJob()
+        public async Task<IActionResult> PostJob()
         {
             ViewData["Listado_Categorias"] = await LoadResource.DropDownListCategorias();
+            ViewData["Listado_Provincias"] = await LoadResource.DropDownListProvincias();
             return View();
         }
 
@@ -86,6 +86,7 @@ namespace MVC_Proyect.Controllers
             }
 
             ViewData["Listado_Categorias"] = await LoadResource.DropDownListCategorias();
+            ViewData["Listado_Provincias"] = await LoadResource.DropDownListProvincias();
             return View(offer_Job);
         }
 
@@ -107,7 +108,7 @@ namespace MVC_Proyect.Controllers
             TempData["Notificacion"] = id_oferta.Delete(id_oferta.id);
             return RedirectToAction(""); //donde corresponda
         }
-
+      
     }
 
     public static class LoadResource
@@ -120,12 +121,28 @@ namespace MVC_Proyect.Controllers
              new SelectListItem()
              {
                  Text = d.nombreCategoria,
-                 Value = d.Id.ToString(),
+                 Value = d.id.ToString(),
                  Selected = false
              });
 
             return dropdownListCategorias;
         }
+
+        public static async Task<List<SelectListItem>> DropDownListProvincias()
+        {
+            var listadoProvincias = await new Provincia().Get();
+
+            var dropdownListProvincias = listadoProvincias.ToList().ConvertAll(d =>
+             new SelectListItem()
+             {
+                 Text = d.Nombre,
+                 Value = d.Nombre.ToString(),
+                 Selected = false
+             });
+
+            return dropdownListProvincias;
+        }
+
     }
 
 }

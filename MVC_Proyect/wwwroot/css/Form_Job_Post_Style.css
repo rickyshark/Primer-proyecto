@@ -141,6 +141,10 @@ input[type='radio'] {
     margin-top: 11px;
 }
 
+.form-second-column select{
+    margin-left:60px;
+}
+
 .form-piece-text {
     max-width: 520px;
     min-height: 84px;
