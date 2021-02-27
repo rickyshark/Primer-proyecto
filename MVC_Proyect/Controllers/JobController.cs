@@ -57,5 +57,10 @@ namespace MVC_Proyect.Controllers
 
         }
 
+        public IActionResult CategoryJob()
+        {
+            return View();
+        }
+
     }
 }

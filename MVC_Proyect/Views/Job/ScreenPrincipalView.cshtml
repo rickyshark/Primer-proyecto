@@ -39,32 +39,32 @@
             <div class="job-list">
                 @foreach (var Job in empleos)
                 {
-                    <div class="job">
-                        <div class="job-header">
+                <div class="job">
+                    <div class="job-header">
 
 
-                            <img src="~/img/defaultwork.svg" alt="" width="86px" class="job-logo">
+                        <img src="~/img/defaultwork.svg" alt="" width="86px" class="job-logo">
 
-                            <div>
-                                <br>
-                                <h2>@Job.Posicion</h2>
-                                <br> <br>
+                        <div>
+                            <br>
+                            <h2>@Job.Posicion</h2>
+                            <br> <br>
 
-                                <img src="img/place.svg" alt="" width="18px">
-                                <p>&nbsp;@Job.Ciudad&nbsp;&nbsp;&nbsp;&nbsp;</p>
-                                <img src="img/dollar.svg" alt="" width="18px">
-                                <p>A discutir&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                            <img src="img/place.svg" alt="" width="18px">
+                            <p>&nbsp;@Job.Ciudad&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                            <img src="img/dollar.svg" alt="" width="18px">
+                            <p>A discutir&nbsp;&nbsp;&nbsp;&nbsp;</p>
 
-                            </div>
                         </div>
-
-                        <div class="job-body">
-                            <p>@Job.Descripcion</p>
-                        </div>
-
-                        <a href="" class="job-end">Ver mas</a>
-
                     </div>
+
+                    <div class="job-body">
+                        <p>@Job.Descripcion</p>
+                    </div>
+
+                    <a href="@Url.Action("CategoryJob", "Job")" class="job-end">Ver mas</a>
+
+                </div>
                 }
 
 
