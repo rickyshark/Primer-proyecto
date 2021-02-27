@@ -11,7 +11,7 @@ namespace MVC_Proyect.Controllers
     public class AccesoController : Controller
     {
 
-        
+
         public async Task<ActionResult> PosterDashboard(int id)
         {
             Offer_Job Job = new Offer_Job();
@@ -20,9 +20,11 @@ namespace MVC_Proyect.Controllers
             var users = await user.Get();
             var empleos = await Job.Get();
 
-           ViewData["Jobs"] = empleos.Where(x => x.Id_Usuario == id).ToList();
-           ViewData["Poster"] = users.Where(x => x.ID == id).First();
 
+
+            var usuario = users.Where(x => x.ID == id).First();
+            ViewData["Jobs"] = empleos.Where(x => x.Email == usuario.Email).ToList();
+            ViewData["Poster"] = usuario;
             return View();
         }
 
@@ -84,7 +86,7 @@ namespace MVC_Proyect.Controllers
             }
 
             ViewData["Listado_Categorias"] = await LoadResource.DropDownListCategorias();
-            return View(offer_Job); 
+            return View(offer_Job);
         }
 
         /*Actualizar oferta*/
