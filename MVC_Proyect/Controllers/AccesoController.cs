@@ -10,6 +10,24 @@ namespace MVC_Proyect.Controllers
 {
     public class AccesoController : Controller
     {
+
+        
+        public async Task<ActionResult> PosterDashboard(int id)
+        {
+            Offer_Job Job = new Offer_Job();
+            Usuario1 user = new Usuario1();
+
+            var users = await user.Get();
+            var empleos = await Job.Get();
+
+           ViewData["Jobs"] = empleos.Where(x => x.Id_Usuario == id).ToList();
+           ViewData["Poster"] = users.Where(x => x.ID == id).First();
+
+            return View();
+        }
+
+
+
         //Vista del Login para iniciar sesion
         [HttpGet]
         public ActionResult Login()
@@ -24,7 +42,7 @@ namespace MVC_Proyect.Controllers
             // metodo para validar
             TempData["Notificacion"] = await user.TryLogin();
 
-           return View();
+            return View();
         }
 
         // Vista para el registro 
@@ -44,7 +62,7 @@ namespace MVC_Proyect.Controllers
                 return View();
             }
 
-            return View(user); 
+            return View(user);
         }
 
 
@@ -87,7 +105,7 @@ namespace MVC_Proyect.Controllers
             TempData["Notificacion"] = id_oferta.Delete(id_oferta.id);
             return RedirectToAction(""); //donde corresponda
         }
-    
+
     }
 
     public static class LoadResource
@@ -108,4 +126,4 @@ namespace MVC_Proyect.Controllers
         }
     }
 
- }
+}

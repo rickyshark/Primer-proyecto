@@ -1,0 +1,126 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.poster-main {
+    background-color: var(--gris);
+    display: flex;
+    justify-content: space-between;
+    margin: 25px 0px;
+    padding: 25px 0px;
+}
+
+.poster-main>* {
+    height: 90px;
+    margin: 0px 30px;
+    line-height: 43px;
+    font-size: 22px;
+}
+
+h1 {
+    color: var(--azul);
+    font-size: 40px;
+}
+
+.poster-post-count {
+    text-align: center;
+    font-weight: bold;
+    font-size: 27px;
+    line-height: 48px;
+}
+
+.post-number {
+    font-size: 60px;
+}
+
+
+/* Job-list */
+
+.job {
+    width: 87%;
+    margin: 20px auto;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 40px;
+}
+
+.job-header {
+    display: flex;
+    align-items: center;
+}
+
+.job-header>* {
+    margin-right: 30px;
+}
+
+.job-header>div>* {
+    display: inline;
+}
+
+.job-header>div>p {
+    font-size: 17px;
+}
+
+.job-body>* {
+    padding: 25px 0px;
+}
+
+.job-end {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 15px 40px;
+    background-color: rgb(27, 182, 27);
+    margin: 0px 20px;
+    width: 110px;
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 6px;
+    float: right;
+}
+
+.recent-job {
+    margin: 70px 0px;
+}
+
+.job-list {
+    background-color: var(--gris);
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.recent-job-title {
+    margin: 15px;
+    font-size: 35px;
+    letter-spacing: 2px;
+    color: var(--azul);
+    text-align: center;
+}
+
+.post-posted>h2 {
+    margin: 50px 0px 10px 15px;
+    font-size: 35px;
+}
+
+.rojo {
+    background-color: var(--rojo);
+}
+
+.no-offer {
+    margin: 4px 30px;
+    font-weight: bold;
+    color: var(--rojo);
+    background-color: #ffffff;
+    font-size: 20px;
+    display: inline-block;
+}
+
+footer {
+    margin-top: 250px;
+}

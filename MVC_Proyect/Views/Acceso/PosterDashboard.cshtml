@@ -1,0 +1,62 @@
+@{
+    ViewData["Title"] = "PosterDashboard";
+    var empleos = ViewData["Jobs"] as List<Offer_Job>;
+    var usuario = ViewData["Poster"] as Usuario1;
+}
+
+<head>
+    <link rel="stylesheet" href="~/css/PosterDashboard.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap" rel="stylesheet">
+</head>
+
+    <section class="poster-main">
+        <div class="poster-information">
+            <h1>@usuario.Nombre @usuario.Apellido</h1>
+            <p><i>@usuario.Url</i></p>
+        </div>
+
+        <div class="poster-post-count">
+            <p>Ofertas Publicadas:</p>
+            <p class="post-number">@empleos.Count</p>
+        </div>
+    </section>
+
+    <section class="post-posted">
+        <h2>Ofertas Posteadas:</h2>
+
+        <div class="job-list">
+
+@if(empleos.Count != 0){
+@foreach (var job in empleos){
+
+            <div class="job">
+                <div class="job-header">
+                    <img src="~/img/defaultwork.svg" alt="" width="90px">
+
+                    <div>
+                        <br>
+                        <h2>@job.Posicion</h2>
+                        <br> <br>
+                        <p><strong>Ciudad: </strong>@job.Ciudad&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                        <p><strong>Sueldo: </strong>A discutir</p>
+                    </div>
+                </div>
+
+                <div class="job-body">
+                    <p>@job.Descripcion</p>
+                </div>
+
+                <a href="" class="job-end rojo">Eliminar</a>
+                <a href="" class="job-end">Editar</a>
+            </div>
+}
+}
+        </div>
+
+        @if(empleos.Count == 0){
+    
+    <p class="no-offer">Aun no ha publicado ninguna oferta!! </p>
+}
+    </section>
+   
