@@ -1,21 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\justi\\OneDrive\\Escritorio\\Proyecto web\\MVC_Proyect\\MVC_Proyect.csproj": {}
+    "C:\\Users\\monte\\Source\\Repos\\Primer-proyecto\\MVC_Proyect\\MVC_Proyect.csproj": {}
   },
   "projects": {
-    "C:\\Users\\justi\\OneDrive\\Escritorio\\Proyecto web\\MVC_Proyect\\MVC_Proyect.csproj": {
+    "C:\\Users\\monte\\Source\\Repos\\Primer-proyecto\\MVC_Proyect\\MVC_Proyect.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\justi\\OneDrive\\Escritorio\\Proyecto web\\MVC_Proyect\\MVC_Proyect.csproj",
+        "projectUniqueName": "C:\\Users\\monte\\Source\\Repos\\Primer-proyecto\\MVC_Proyect\\MVC_Proyect.csproj",
         "projectName": "MVC_Proyect",
-        "projectPath": "C:\\Users\\justi\\OneDrive\\Escritorio\\Proyecto web\\MVC_Proyect\\MVC_Proyect.csproj",
-        "packagesPath": "C:\\Users\\justi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\justi\\OneDrive\\Escritorio\\Proyecto web\\MVC_Proyect\\obj\\",
+        "projectPath": "C:\\Users\\monte\\Source\\Repos\\Primer-proyecto\\MVC_Proyect\\MVC_Proyect.csproj",
+        "packagesPath": "C:\\Users\\monte\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\monte\\Source\\Repos\\Primer-proyecto\\MVC_Proyect\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
         "configFilePaths": [
-          "C:\\Users\\justi\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\monte\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
