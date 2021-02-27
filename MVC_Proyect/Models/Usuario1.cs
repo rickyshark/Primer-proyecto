@@ -12,7 +12,6 @@ namespace MVC_Proyect.Models
 {
     public class Usuario1 : RequestProperties, IPost, IPut, IDelete
     {
-        [Key]
         public int ID { get; set; }
         public string Nombre { get; set; }
         public string Apellido { get; set; }
@@ -30,17 +29,20 @@ namespace MVC_Proyect.Models
             DIRECTORIO_API = "Usuario1";
         }
 
-        public async Task<string> Post()
+        public async Task<string> Post(Usuario1 usuario)
         {
-            RESPUESTA_HTTP = await
-               PETICION_HTTP.PostAsync(URL+ DIRECTORIO_API, ContenidoHttp(this));
+            var json = JsonConvert.SerializeObject(usuario);
+            HttpClient httpClient = new HttpClient();
+            var content = new StringContent(json, System.Text.Encoding.UTF8, "application/json");
+            var response = await httpClient.PostAsync("https://webapi-prog3.azurewebsites.net/api/Usuario1", content);
 
-            if (RESPUESTA_HTTP.IsSuccessStatusCode)
-                return null;
+            if (response.IsSuccessStatusCode)
+                return MoldeNotificaciones.DevolverNotificacion(
+                     new Tuple<bool, string>(true, "Te has registrado con exito !"));
             else
                 return MoldeNotificaciones.DevolverNotificacion(
                      new Tuple<bool, string>(false, REQUEST_ISSUES));
-        }
+        }   
 
         public async Task<string> Put()
         {
@@ -74,6 +76,10 @@ namespace MVC_Proyect.Models
                 return MoldeNotificaciones.DevolverNotificacion(
                     new Tuple<bool, string>(false, REQUEST_ISSUES));            
         }
-                    
+
+        public Task<string> Post()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

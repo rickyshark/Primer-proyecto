@@ -27,7 +27,7 @@
                 {
                     <div class="form-header">
 
-                        @Html.DropDownList("Categoria", new SelectList("PONER CATEGORIAS AQUI"), "Categorias")
+                        @Html.DropDownList("Categoria", ViewData["Listado_Categorias"] as List<SelectListItem>, "Categorias")
 
                         <div>
                             <h2>Tipo</h2>

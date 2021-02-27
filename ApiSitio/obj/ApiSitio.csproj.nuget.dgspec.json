@@ -1,6 +1,7 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
     "/home/carlossantos/Escritorio/Primer-proyecto-3/ApiSitio/ApiSitio.csproj": {}
   },
   "projects": {
@@ -12,9 +13,24 @@
         "projectPath": "/home/carlossantos/Escritorio/Primer-proyecto-3/ApiSitio/ApiSitio.csproj",
         "packagesPath": "/home/carlossantos/.nuget/packages/",
         "outputPath": "/home/carlossantos/Escritorio/Primer-proyecto-3/ApiSitio/obj/",
+=======
+    "C:\\Users\\Legnar Acv2\\Documents\\Programación 3\\ApiSitio\\ApiSitio\\ApiSitio.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Legnar Acv2\\Documents\\Programación 3\\ApiSitio\\ApiSitio\\ApiSitio.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Legnar Acv2\\Documents\\Programación 3\\ApiSitio\\ApiSitio\\ApiSitio.csproj",
+        "projectName": "ApiSitio",
+        "projectPath": "C:\\Users\\Legnar Acv2\\Documents\\Programación 3\\ApiSitio\\ApiSitio\\ApiSitio.csproj",
+        "packagesPath": "C:\\Users\\Legnar Acv2\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Legnar Acv2\\Documents\\Programación 3\\ApiSitio\\ApiSitio\\obj\\",
+>>>>>>> e2679726178ae7a3d5079c9735ddebc74f85cee0
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/carlossantos/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Legnar Acv2\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -24,7 +40,6 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
-            "targetAlias": "netcoreapp3.1",
             "projectReferences": {}
           }
         },
@@ -36,7 +51,6 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "targetAlias": "netcoreapp3.1",
           "dependencies": {
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
@@ -79,7 +93,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/5.0.103/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

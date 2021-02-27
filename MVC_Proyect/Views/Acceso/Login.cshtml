@@ -29,7 +29,7 @@
                         <h1>WELCOME</h1>
                     </header>
 
-                    @using (Html.BeginForm("TryLogin", "Acceso", FormMethod.Post))
+                    @using (Html.BeginForm("Login", "Acceso", FormMethod.Post))
                     {
                         <div>
                             @Html.TextBoxFor(u => u.Username, null, new { Placeholder = "Username", Autocomplete = "off" }) &nbsp;&nbsp;
