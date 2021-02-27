@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\User\\OneDrive\\Escritorio\\Primer-proyecto\\ApiSitio\\ApiSitio.csproj": {}
+    "C:\\Users\\Legnar Acv2\\source\\repos\\Primer-proyecto\\Prog3\\ApiSitio\\ApiSitio.csproj": {}
   },
   "projects": {
-    "C:\\Users\\User\\OneDrive\\Escritorio\\Primer-proyecto\\ApiSitio\\ApiSitio.csproj": {
+    "C:\\Users\\Legnar Acv2\\source\\repos\\Primer-proyecto\\Prog3\\ApiSitio\\ApiSitio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\OneDrive\\Escritorio\\Primer-proyecto\\ApiSitio\\ApiSitio.csproj",
+        "projectUniqueName": "C:\\Users\\Legnar Acv2\\source\\repos\\Primer-proyecto\\Prog3\\ApiSitio\\ApiSitio.csproj",
         "projectName": "ApiSitio",
-        "projectPath": "C:\\Users\\User\\OneDrive\\Escritorio\\Primer-proyecto\\ApiSitio\\ApiSitio.csproj",
-        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\OneDrive\\Escritorio\\Primer-proyecto\\ApiSitio\\obj\\",
+        "projectPath": "C:\\Users\\Legnar Acv2\\source\\repos\\Primer-proyecto\\Prog3\\ApiSitio\\ApiSitio.csproj",
+        "packagesPath": "C:\\Users\\Legnar Acv2\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Legnar Acv2\\source\\repos\\Primer-proyecto\\Prog3\\ApiSitio\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Legnar Acv2\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -75,7 +75,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

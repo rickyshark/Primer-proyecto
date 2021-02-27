@@ -83,11 +83,11 @@ namespace MVC_Proyect.Models
 
         public async Task<string> TryLogin()
         {
-            var json = await PETICION_HTTP.GetStringAsync(URL + DIRECTORIO_API);
+            var lst = await Get();
 
-            int idUsuario = (JsonConvert.DeserializeObject<List<Usuario1>>(json).
+            int idUsuario = lst.ToList().
                 Where(x => x.Username == Username && x.Contraseña == Contraseña).
-                Select(x => x.ID).FirstOrDefault());
+                Select(x => x.ID).FirstOrDefault();
                 
             if(idUsuario != 0 && idUsuario.ToString() != null)
                 return MoldeNotificaciones.DevolverNotificacion(
