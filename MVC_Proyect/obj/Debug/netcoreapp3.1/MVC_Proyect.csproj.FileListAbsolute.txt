@@ -337,6 +337,124 @@ C:/Users/justi/OneDrive/Escritorio/Proyecto2/MVC_Proyect/obj/Debug/netcoreapp3.1
 /home/carlossantos/Escritorio/Primer-proyecto-2/MVC_Proyect/obj/Debug/netcoreapp3.1/MVC_Proyect.dll
 /home/carlossantos/Escritorio/Primer-proyecto-2/MVC_Proyect/obj/Debug/netcoreapp3.1/MVC_Proyect.pdb
 /home/carlossantos/Escritorio/Primer-proyecto-2/MVC_Proyect/obj/Debug/netcoreapp3.1/MVC_Proyect.genruntimeconfig.cache
+<<<<<<< HEAD
+<<<<<<< HEAD
+C:\Users\Legnar Acv2\Documents\Programación 3\ApiSitio\MVC_Proyect\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\Legnar Acv2\Documents\Programación 3\ApiSitio\MVC_Proyect\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\Legnar Acv2\Documents\Programación 3\ApiSitio\MVC_Proyect\bin\Debug\netcoreapp3.1\MVC_Proyect.exe
+C:\Users\Legnar Acv2\Documents\Programación 3\ApiSitio\MVC_Proyect\bin\Debug\netcoreapp3.1\MVC_Proyect.deps.json
+C:\Users\Legnar Acv2\Documents\Programación 3\ApiSitio\MVC_Proyect\bin\Debug\netcoreapp3.1\MVC_Proyect.runtimeconfig.json
+C:\Users\Legnar Acv2\Documents\Programación 3\ApiSitio\MVC_Proyect\bin\Debug\netcoreapp3.1\MVC_Proyect.runtimeconfig.dev.json
+C:\Users\Legnar Acv2\Documents\Programación 3\ApiSitio\MVC_Proyect\bin\Debug\netcoreapp3.1\MVC_Proyect.dll
+C:\Users\Legnar Acv2\Documents\Programación 3\ApiSitio\MVC_Proyect\bin\Debug\netcoreapp3.1\MVC_Proyect.pdb
+C:\Users\Legnar Acv2\Documents\Programación 3\ApiSitio\MVC_Proyect\bin\Debug\netcoreapp3.1\MVC_Proyect.Views.dll
+C:\Users\Legnar Acv2\Documents\Programación 3\ApiSitio\MVC_Proyect\bin\Debug\netcoreapp3.1\MVC_Proyect.Views.pdb
+C:\Users\Legnar Acv2\Documents\Programación 3\ApiSitio\MVC_Proyect\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Razor.Language.dll
+C:\Users\Legnar Acv2\Documents\Programación 3\ApiSitio\MVC_Proyect\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.dll
+C:\Users\Legnar Acv2\Documents\Programación 3\ApiSitio\MVC_Proyect\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Legnar Acv2\Documents\Programación 3\ApiSitio\MVC_Proyect\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+C:\Users\Legnar Acv2\Documents\Programación 3\ApiSitio\MVC_Proyect\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.Razor.dll
+C:\Users\Legnar Acv2\Documents\Programación 3\ApiSitio\MVC_Proyect\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.Workspaces.dll
+C:\Users\Legnar Acv2\Documents\Programación 3\ApiSitio\MVC_Proyect\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.dll
+C:\Users\Legnar Acv2\Documents\Programación 3\ApiSitio\MVC_Proyect\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Contracts.dll
+C:\Users\Legnar Acv2\Documents\Programación 3\ApiSitio\MVC_Proyect\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
+C:\Users\Legnar Acv2\Documents\Programación 3\ApiSitio\MVC_Proyect\bin\Debug\netcoreapp3.1\dotnet-aspnet-codegenerator-design.dll
+C:\Users\Legnar Acv2\Documents\Programación 3\ApiSitio\MVC_Proyect\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
+C:\Users\Legnar Acv2\Documents\Programación 3\ApiSitio\MVC_Proyect\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
+C:\Users\Legnar Acv2\Documents\Programación 3\ApiSitio\MVC_Proyect\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
+C:\Users\Legnar Acv2\Documents\Programación 3\ApiSitio\MVC_Proyect\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
+C:\Users\Legnar Acv2\Documents\Programación 3\ApiSitio\MVC_Proyect\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\Legnar Acv2\Documents\Programación 3\ApiSitio\MVC_Proyect\bin\Debug\netcoreapp3.1\NuGet.Frameworks.dll
+C:\Users\Legnar Acv2\Documents\Programación 3\ApiSitio\MVC_Proyect\bin\Debug\netcoreapp3.1\System.Composition.AttributedModel.dll
+C:\Users\Legnar Acv2\Documents\Programación 3\ApiSitio\MVC_Proyect\bin\Debug\netcoreapp3.1\System.Composition.Convention.dll
+C:\Users\Legnar Acv2\Documents\Programación 3\ApiSitio\MVC_Proyect\bin\Debug\netcoreapp3.1\System.Composition.Hosting.dll
+C:\Users\Legnar Acv2\Documents\Programación 3\ApiSitio\MVC_Proyect\bin\Debug\netcoreapp3.1\System.Composition.Runtime.dll
+C:\Users\Legnar Acv2\Documents\Programación 3\ApiSitio\MVC_Proyect\bin\Debug\netcoreapp3.1\System.Composition.TypedParts.dll
+C:\Users\Legnar Acv2\Documents\Programación 3\ApiSitio\MVC_Proyect\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Legnar Acv2\Documents\Programación 3\ApiSitio\MVC_Proyect\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Legnar Acv2\Documents\Programación 3\ApiSitio\MVC_Proyect\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Legnar Acv2\Documents\Programación 3\ApiSitio\MVC_Proyect\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Legnar Acv2\Documents\Programación 3\ApiSitio\MVC_Proyect\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Legnar Acv2\Documents\Programación 3\ApiSitio\MVC_Proyect\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Legnar Acv2\Documents\Programación 3\ApiSitio\MVC_Proyect\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Legnar Acv2\Documents\Programación 3\ApiSitio\MVC_Proyect\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Legnar Acv2\Documents\Programación 3\ApiSitio\MVC_Proyect\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Legnar Acv2\Documents\Programación 3\ApiSitio\MVC_Proyect\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Legnar Acv2\Documents\Programación 3\ApiSitio\MVC_Proyect\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Legnar Acv2\Documents\Programación 3\ApiSitio\MVC_Proyect\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Legnar Acv2\Documents\Programación 3\ApiSitio\MVC_Proyect\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Legnar Acv2\Documents\Programación 3\ApiSitio\MVC_Proyect\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Legnar Acv2\Documents\Programación 3\ApiSitio\MVC_Proyect\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Legnar Acv2\Documents\Programación 3\ApiSitio\MVC_Proyect\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Legnar Acv2\Documents\Programación 3\ApiSitio\MVC_Proyect\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Legnar Acv2\Documents\Programación 3\ApiSitio\MVC_Proyect\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Legnar Acv2\Documents\Programación 3\ApiSitio\MVC_Proyect\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Legnar Acv2\Documents\Programación 3\ApiSitio\MVC_Proyect\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Legnar Acv2\Documents\Programación 3\ApiSitio\MVC_Proyect\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Legnar Acv2\Documents\Programación 3\ApiSitio\MVC_Proyect\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Legnar Acv2\Documents\Programación 3\ApiSitio\MVC_Proyect\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Legnar Acv2\Documents\Programación 3\ApiSitio\MVC_Proyect\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Legnar Acv2\Documents\Programación 3\ApiSitio\MVC_Proyect\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Legnar Acv2\Documents\Programación 3\ApiSitio\MVC_Proyect\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Legnar Acv2\Documents\Programación 3\ApiSitio\MVC_Proyect\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Legnar Acv2\Documents\Programación 3\ApiSitio\MVC_Proyect\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Legnar Acv2\Documents\Programación 3\ApiSitio\MVC_Proyect\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Legnar Acv2\Documents\Programación 3\ApiSitio\MVC_Proyect\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Legnar Acv2\Documents\Programación 3\ApiSitio\MVC_Proyect\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Legnar Acv2\Documents\Programación 3\ApiSitio\MVC_Proyect\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Legnar Acv2\Documents\Programación 3\ApiSitio\MVC_Proyect\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Legnar Acv2\Documents\Programación 3\ApiSitio\MVC_Proyect\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Legnar Acv2\Documents\Programación 3\ApiSitio\MVC_Proyect\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Legnar Acv2\Documents\Programación 3\ApiSitio\MVC_Proyect\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Legnar Acv2\Documents\Programación 3\ApiSitio\MVC_Proyect\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Legnar Acv2\Documents\Programación 3\ApiSitio\MVC_Proyect\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Legnar Acv2\Documents\Programación 3\ApiSitio\MVC_Proyect\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Legnar Acv2\Documents\Programación 3\ApiSitio\MVC_Proyect\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Legnar Acv2\Documents\Programación 3\ApiSitio\MVC_Proyect\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Legnar Acv2\Documents\Programación 3\ApiSitio\MVC_Proyect\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Legnar Acv2\Documents\Programación 3\ApiSitio\MVC_Proyect\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Legnar Acv2\Documents\Programación 3\ApiSitio\MVC_Proyect\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Legnar Acv2\Documents\Programación 3\ApiSitio\MVC_Proyect\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Legnar Acv2\Documents\Programación 3\ApiSitio\MVC_Proyect\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Legnar Acv2\Documents\Programación 3\ApiSitio\MVC_Proyect\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Legnar Acv2\Documents\Programación 3\ApiSitio\MVC_Proyect\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Legnar Acv2\Documents\Programación 3\ApiSitio\MVC_Proyect\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Legnar Acv2\Documents\Programación 3\ApiSitio\MVC_Proyect\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Legnar Acv2\Documents\Programación 3\ApiSitio\MVC_Proyect\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Legnar Acv2\Documents\Programación 3\ApiSitio\MVC_Proyect\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Legnar Acv2\Documents\Programación 3\ApiSitio\MVC_Proyect\obj\Debug\netcoreapp3.1\MVC_Proyect.csprojAssemblyReference.cache
+C:\Users\Legnar Acv2\Documents\Programación 3\ApiSitio\MVC_Proyect\obj\Debug\netcoreapp3.1\MVC_Proyect.AssemblyInfoInputs.cache
+C:\Users\Legnar Acv2\Documents\Programación 3\ApiSitio\MVC_Proyect\obj\Debug\netcoreapp3.1\MVC_Proyect.AssemblyInfo.cs
+C:\Users\Legnar Acv2\Documents\Programación 3\ApiSitio\MVC_Proyect\obj\Debug\netcoreapp3.1\MVC_Proyect.csproj.CoreCompileInputs.cache
+C:\Users\Legnar Acv2\Documents\Programación 3\ApiSitio\MVC_Proyect\obj\Debug\netcoreapp3.1\MVC_Proyect.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Legnar Acv2\Documents\Programación 3\ApiSitio\MVC_Proyect\obj\Debug\netcoreapp3.1\MVC_Proyect.RazorAssemblyInfo.cache
+C:\Users\Legnar Acv2\Documents\Programación 3\ApiSitio\MVC_Proyect\obj\Debug\netcoreapp3.1\MVC_Proyect.RazorAssemblyInfo.cs
+C:\Users\Legnar Acv2\Documents\Programación 3\ApiSitio\MVC_Proyect\obj\Debug\netcoreapp3.1\staticwebassets\MVC_Proyect.StaticWebAssets.Manifest.cache
+C:\Users\Legnar Acv2\Documents\Programación 3\ApiSitio\MVC_Proyect\obj\Debug\netcoreapp3.1\staticwebassets\MVC_Proyect.StaticWebAssets.xml
+C:\Users\Legnar Acv2\Documents\Programación 3\ApiSitio\MVC_Proyect\obj\Debug\netcoreapp3.1\scopedcss\bundle\MVC_Proyect.styles.css
+C:\Users\Legnar Acv2\Documents\Programación 3\ApiSitio\MVC_Proyect\obj\Debug\netcoreapp3.1\MVC_Proyect.TagHelpers.input.cache
+C:\Users\Legnar Acv2\Documents\Programación 3\ApiSitio\MVC_Proyect\obj\Debug\netcoreapp3.1\MVC_Proyect.TagHelpers.output.cache
+C:\Users\Legnar Acv2\Documents\Programación 3\ApiSitio\MVC_Proyect\obj\Debug\netcoreapp3.1\MVC_Proyect.RazorCoreGenerate.cache
+C:\Users\Legnar Acv2\Documents\Programación 3\ApiSitio\MVC_Proyect\obj\Debug\netcoreapp3.1\Razor\Views\Acceso\Form.cshtml.g.cs
+C:\Users\Legnar Acv2\Documents\Programación 3\ApiSitio\MVC_Proyect\obj\Debug\netcoreapp3.1\Razor\Views\Acceso\Login.cshtml.g.cs
+C:\Users\Legnar Acv2\Documents\Programación 3\ApiSitio\MVC_Proyect\obj\Debug\netcoreapp3.1\Razor\Views\Acceso\Register.cshtml.g.cs
+C:\Users\Legnar Acv2\Documents\Programación 3\ApiSitio\MVC_Proyect\obj\Debug\netcoreapp3.1\Razor\Views\Job\ScreenPrincipalView.cshtml.g.cs
+C:\Users\Legnar Acv2\Documents\Programación 3\ApiSitio\MVC_Proyect\obj\Debug\netcoreapp3.1\Razor\Views\Job\SearchJob.cshtml.g.cs
+C:\Users\Legnar Acv2\Documents\Programación 3\ApiSitio\MVC_Proyect\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
+C:\Users\Legnar Acv2\Documents\Programación 3\ApiSitio\MVC_Proyect\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+C:\Users\Legnar Acv2\Documents\Programación 3\ApiSitio\MVC_Proyect\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\Legnar Acv2\Documents\Programación 3\ApiSitio\MVC_Proyect\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
+C:\Users\Legnar Acv2\Documents\Programación 3\ApiSitio\MVC_Proyect\obj\Debug\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs
+C:\Users\Legnar Acv2\Documents\Programación 3\ApiSitio\MVC_Proyect\obj\Debug\netcoreapp3.1\MVC_Proyect.RazorTargetAssemblyInfo.cache
+C:\Users\Legnar Acv2\Documents\Programación 3\ApiSitio\MVC_Proyect\obj\Debug\netcoreapp3.1\MVC_Proyect.RazorTargetAssemblyInfo.cs
+C:\Users\Legnar Acv2\Documents\Programación 3\ApiSitio\MVC_Proyect\obj\Debug\netcoreapp3.1\MVC_Proyect.Views.pdb
+C:\Users\Legnar Acv2\Documents\Programación 3\ApiSitio\MVC_Proyect\obj\Debug\netcoreapp3.1\MVC_Proyect.csproj.CopyComplete
+C:\Users\Legnar Acv2\Documents\Programación 3\ApiSitio\MVC_Proyect\obj\Debug\netcoreapp3.1\MVC_Proyect.dll
+C:\Users\Legnar Acv2\Documents\Programación 3\ApiSitio\MVC_Proyect\obj\Debug\netcoreapp3.1\MVC_Proyect.pdb
+C:\Users\Legnar Acv2\Documents\Programación 3\ApiSitio\MVC_Proyect\obj\Debug\netcoreapp3.1\MVC_Proyect.genruntimeconfig.cache
+=======
+=======
+>>>>>>> 7d42f4abc39a59217f36a87da5a8b22f7b005fe4
 /home/carlossantos/Escritorio/Primer-proyecto-3/MVC_Proyect/bin/Debug/netcoreapp3.1/appsettings.Development.json
 /home/carlossantos/Escritorio/Primer-proyecto-3/MVC_Proyect/bin/Debug/netcoreapp3.1/appsettings.json
 /home/carlossantos/Escritorio/Primer-proyecto-3/MVC_Proyect/bin/Debug/netcoreapp3.1/MVC_Proyect
@@ -450,3 +568,7 @@ C:/Users/justi/OneDrive/Escritorio/Proyecto2/MVC_Proyect/obj/Debug/netcoreapp3.1
 /home/carlossantos/Escritorio/Primer-proyecto-3/MVC_Proyect/obj/Debug/netcoreapp3.1/MVC_Proyect.dll
 /home/carlossantos/Escritorio/Primer-proyecto-3/MVC_Proyect/obj/Debug/netcoreapp3.1/MVC_Proyect.pdb
 /home/carlossantos/Escritorio/Primer-proyecto-3/MVC_Proyect/obj/Debug/netcoreapp3.1/MVC_Proyect.genruntimeconfig.cache
+<<<<<<< HEAD
+>>>>>>> 7d42f4abc39a59217f36a87da5a8b22f7b005fe4
+=======
+>>>>>>> 7d42f4abc39a59217f36a87da5a8b22f7b005fe4

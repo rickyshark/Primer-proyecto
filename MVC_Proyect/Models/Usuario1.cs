@@ -22,7 +22,6 @@ namespace MVC_Proyect.Models
         public string Url { get; set; }
         public string Email_emp { get; set; }
         public string Username { get; set; }
-
         
         public Usuario1()
         {
@@ -31,7 +30,20 @@ namespace MVC_Proyect.Models
 
         public async Task<string> Post(Usuario1 usuario)
         {
-            var json = JsonConvert.SerializeObject(usuario);
+
+            var usuario2 = new Usuario1
+            {
+                Nombre = usuario.Nombre,
+                Apellido = usuario.Apellido,
+                Username = usuario.Username,
+                Contraseña = usuario.Contraseña,
+                Email = usuario.Email_emp,
+                Email_emp = usuario.Email_emp,
+                Rol = "Poster",
+                Telefono = usuario.Telefono,
+                Url = usuario.Url
+            };
+            var json = JsonConvert.SerializeObject(usuario2);
             HttpClient httpClient = new HttpClient();
             var content = new StringContent(json, System.Text.Encoding.UTF8, "application/json");
             var response = await httpClient.PostAsync("https://webapi-prog3.azurewebsites.net/api/Usuario1", content);

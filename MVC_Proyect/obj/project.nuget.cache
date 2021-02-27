@@ -7,8 +7,15 @@
 =======
   "dgSpecHash": "di7q4B7PzmnsSXkR0wYjSMAJG4cD0Go/9zg3k3uNFjZmwCaWZhTMTtJ2KJ7tqvX8jWrNK/w3FJCMDD1n8bJ24w==",
   "success": true,
+<<<<<<< HEAD
+  "projectFilePath": "C:\\Users\\Legnar Acv2\\Documents\\ProgramaciÃ³n 3\\ApiSitio\\MVC_Proyect\\MVC_Proyect.csproj",
+=======
   "projectFilePath": "C:\\Users\\Legnar Acv2\\Documents\\Programación 3\\ApiSitio\\MVC_Proyect\\MVC_Proyect.csproj",
 >>>>>>> e2679726178ae7a3d5079c9735ddebc74f85cee0
+<<<<<<< HEAD
+>>>>>>> 7d42f4abc39a59217f36a87da5a8b22f7b005fe4
+=======
+>>>>>>> 7d42f4abc39a59217f36a87da5a8b22f7b005fe4
   "expectedPackageFiles": [
     "C:\\Users\\Legnar Acv2\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\Legnar Acv2\\.nuget\\packages\\microsoft.aspnetcore.razor\\2.2.0\\microsoft.aspnetcore.razor.2.2.0.nupkg.sha512",

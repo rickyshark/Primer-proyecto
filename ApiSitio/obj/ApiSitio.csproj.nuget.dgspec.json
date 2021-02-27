@@ -2,6 +2,12 @@
   "format": 1,
   "restore": {
 <<<<<<< HEAD
+<<<<<<< HEAD
+    "C:\\Users\\Legnar Acv2\\Documents\\Programaci贸n 3\\ApiSitio\\ApiSitio\\ApiSitio.csproj": {}
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 7d42f4abc39a59217f36a87da5a8b22f7b005fe4
     "/home/carlossantos/Escritorio/Primer-proyecto-3/ApiSitio/ApiSitio.csproj": {}
   },
   "projects": {
@@ -15,18 +21,29 @@
         "outputPath": "/home/carlossantos/Escritorio/Primer-proyecto-3/ApiSitio/obj/",
 =======
     "C:\\Users\\Legnar Acv2\\Documents\\Programaci髇 3\\ApiSitio\\ApiSitio\\ApiSitio.csproj": {}
+>>>>>>> 7d42f4abc39a59217f36a87da5a8b22f7b005fe4
   },
   "projects": {
-    "C:\\Users\\Legnar Acv2\\Documents\\Programaci髇 3\\ApiSitio\\ApiSitio\\ApiSitio.csproj": {
+    "C:\\Users\\Legnar Acv2\\Documents\\Programaci贸n 3\\ApiSitio\\ApiSitio\\ApiSitio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Legnar Acv2\\Documents\\Programaci髇 3\\ApiSitio\\ApiSitio\\ApiSitio.csproj",
+        "projectUniqueName": "C:\\Users\\Legnar Acv2\\Documents\\Programaci贸n 3\\ApiSitio\\ApiSitio\\ApiSitio.csproj",
         "projectName": "ApiSitio",
-        "projectPath": "C:\\Users\\Legnar Acv2\\Documents\\Programaci髇 3\\ApiSitio\\ApiSitio\\ApiSitio.csproj",
+        "projectPath": "C:\\Users\\Legnar Acv2\\Documents\\Programaci贸n 3\\ApiSitio\\ApiSitio\\ApiSitio.csproj",
         "packagesPath": "C:\\Users\\Legnar Acv2\\.nuget\\packages\\",
+<<<<<<< HEAD
+        "outputPath": "C:\\Users\\Legnar Acv2\\Documents\\Programaci贸n 3\\ApiSitio\\ApiSitio\\obj\\",
+=======
         "outputPath": "C:\\Users\\Legnar Acv2\\Documents\\Programaci髇 3\\ApiSitio\\ApiSitio\\obj\\",
 >>>>>>> e2679726178ae7a3d5079c9735ddebc74f85cee0
+<<<<<<< HEAD
+>>>>>>> 7d42f4abc39a59217f36a87da5a8b22f7b005fe4
+=======
+>>>>>>> 7d42f4abc39a59217f36a87da5a8b22f7b005fe4
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
         "configFilePaths": [
           "C:\\Users\\Legnar Acv2\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
@@ -36,10 +53,12 @@
           "netcoreapp3.1"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
             "projectReferences": {}
           }
         },
@@ -51,6 +70,7 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "dependencies": {
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
@@ -59,6 +79,10 @@
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[5.0.3, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.3, )"
             }
           },
           "imports": [
@@ -71,20 +95,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[3.1.10, 3.1.10]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Host.linux-x64",
-              "version": "[3.1.12, 3.1.12]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[3.1.0, 3.1.0]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
