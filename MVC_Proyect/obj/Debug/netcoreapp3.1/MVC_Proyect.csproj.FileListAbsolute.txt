@@ -225,3 +225,4 @@ C:\Users\User\OneDrive\Escritorio\Primer-proyecto\MVC_Proyect\obj\Debug\netcorea
 C:\Users\User\OneDrive\Escritorio\Primer-proyecto\MVC_Proyect\obj\Debug\netcoreapp3.1\MVC_Proyect.pdb
 C:\Users\User\OneDrive\Escritorio\Primer-proyecto\MVC_Proyect\obj\Debug\netcoreapp3.1\MVC_Proyect.genruntimeconfig.cache
 C:\Users\User\OneDrive\Escritorio\Primer-proyecto\MVC_Proyect\obj\Debug\netcoreapp3.1\Razor\Views\Job\CategoryJob.cshtml.g.cs
+C:\Users\justi\OneDrive\Escritorio\Proyecto3\MVC_Proyect\obj\Debug\netcoreapp3.1\Razor\Views\Job\CategoryJob.cshtml.g.cs

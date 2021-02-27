@@ -61,12 +61,12 @@ namespace MVC_Proyect.Controllers
         {
             if (ModelState.IsValid)
             {
-                TempData["Notificacion"] = offer_Job.Post();
+                TempData["Notificacion"] = await offer_Job.Post();
                 return View(); // donde corresponda
             }
 
             ViewData["Listado_Categorias"] = await LoadResource.DropDownListCategorias();
-            return View(offer_Job);
+            return View(offer_Job); 
         }
 
         /*Actualizar oferta*/
