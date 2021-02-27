@@ -27,10 +27,10 @@ namespace MVC_Proyect.Models
             RESPUESTA_HTTP = await PETICION_HTTP.PostAsync(URL + DIRECTORIO_API, ContenidoHttp(this));
 
             if (RESPUESTA_HTTP.IsSuccessStatusCode)
-                return MoldeNotificaciones.DevolverNotificacion(
+                return Interaccion.DevolverNotificacion(
                     new Tuple<bool, string>(true, "Reporte enviado con Exito !"));
             else
-                return MoldeNotificaciones.DevolverNotificacion(
+                return Interaccion.DevolverNotificacion(
                      new Tuple<bool, string>(false, REQUEST_ISSUES));
         }
 
@@ -39,10 +39,10 @@ namespace MVC_Proyect.Models
             RESPUESTA_HTTP = await PETICION_HTTP.PutAsync(URL + DIRECTORIO_API, ContenidoHttp(this));
 
             if (RESPUESTA_HTTP.IsSuccessStatusCode)
-                return MoldeNotificaciones.DevolverNotificacion(
+                return Interaccion.DevolverNotificacion(
                     new Tuple<bool, string>(true, "Reporte actualizado con Exito !"));
             else
-                return MoldeNotificaciones.DevolverNotificacion(
+                return Interaccion.DevolverNotificacion(
                      new Tuple<bool, string>(false, REQUEST_ISSUES));
         }
 
@@ -59,10 +59,10 @@ namespace MVC_Proyect.Models
             RESPUESTA_HTTP = await PETICION_HTTP.DeleteAsync(URL + DIRECTORIO_API + "/" + id);
 
             if (RESPUESTA_HTTP.IsSuccessStatusCode)
-                return MoldeNotificaciones.DevolverNotificacion(
+                return Interaccion.DevolverNotificacion(
                                    new Tuple<bool, string>(true, "Reporte Eliminado con Exito !"));
             else
-                return MoldeNotificaciones.DevolverNotificacion(
+                return Interaccion.DevolverNotificacion(
                     new Tuple<bool, string>(false, REQUEST_ISSUES));
         }
      

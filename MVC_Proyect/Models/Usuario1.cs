@@ -41,10 +41,10 @@ namespace MVC_Proyect.Models
         {
             RESPUESTA_HTTP = await PETICION_HTTP.PostAsync(URL + DIRECTORIO_API, ContenidoHttp(this));
             if (RESPUESTA_HTTP.IsSuccessStatusCode)
-                return MoldeNotificaciones.DevolverNotificacion(
+                return Interaccion.DevolverNotificacion(
                      new Tuple<bool, string>(true, "Te has registrado con exito !"));
             else
-                return MoldeNotificaciones.DevolverNotificacion(
+                return Interaccion.DevolverNotificacion(
                      new Tuple<bool, string>(false, REQUEST_ISSUES));
         }   
 
@@ -54,10 +54,10 @@ namespace MVC_Proyect.Models
                 PETICION_HTTP.PutAsync(URL + DIRECTORIO_API + "/"+ ID, ContenidoHttp(this));
 
             if (RESPUESTA_HTTP.IsSuccessStatusCode)
-                return MoldeNotificaciones.DevolverNotificacion(
+                return Interaccion.DevolverNotificacion(
                     new Tuple<bool, string>(true, "Informacion de Usuario Actualizado con Exito !"));
             else
-                return MoldeNotificaciones.DevolverNotificacion(
+                return Interaccion.DevolverNotificacion(
                      new Tuple<bool, string>(false, REQUEST_ISSUES));
         }
 
@@ -74,10 +74,10 @@ namespace MVC_Proyect.Models
             RESPUESTA_HTTP = await PETICION_HTTP.DeleteAsync(URL + DIRECTORIO_API + "/" + id);
 
             if (RESPUESTA_HTTP.IsSuccessStatusCode)
-                return MoldeNotificaciones.DevolverNotificacion(
+                return Interaccion.DevolverNotificacion(
                                    new Tuple<bool, string>(true, "Usuario Eliminado con Exito !"));
             else
-                return MoldeNotificaciones.DevolverNotificacion(
+                return Interaccion.DevolverNotificacion(
                     new Tuple<bool, string>(false, REQUEST_ISSUES));            
         }
 
@@ -90,14 +90,12 @@ namespace MVC_Proyect.Models
                 Select(x => x.ID).FirstOrDefault();
                 
             if(idUsuario != 0 && idUsuario.ToString() != null)
-                return MoldeNotificaciones.DevolverNotificacion(
-                          new Tuple<bool, string>(true, "Usuario Logueado con Exito !"));
+                return Interaccion.Redireccion("PosterDashboard", idUsuario);
             else
-                return MoldeNotificaciones.DevolverNotificacion(
+                return Interaccion.DevolverNotificacion(
                     new Tuple<bool, string>(false, "Username o Contraseña Incorrecta"));
 
         }
-
 
     }
 }

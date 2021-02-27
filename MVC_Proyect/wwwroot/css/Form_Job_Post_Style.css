@@ -56,7 +56,7 @@
 }
 
 /*Formulario header*/
-.form-header > select {
+select {
     background-color: white;
     border: solid 2px var(--azul);
     border-radius: 5px;

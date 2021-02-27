@@ -23,10 +23,10 @@ namespace MVC_Proyect.Models
             RESPUESTA_HTTP = await PETICION_HTTP.PostAsync(URL + DIRECTORIO_API, ContenidoHttp(this));
 
             if (RESPUESTA_HTTP.IsSuccessStatusCode)
-                return MoldeNotificaciones.DevolverNotificacion(
+                return Interaccion.DevolverNotificacion(
                     new Tuple<bool, string>(true, "Categoria de puesto de Trabajo Creada con Exito !"));
             else
-                return MoldeNotificaciones.DevolverNotificacion(
+                return Interaccion.DevolverNotificacion(
                      new Tuple<bool, string>(false, REQUEST_ISSUES));
         }
 
@@ -35,10 +35,10 @@ namespace MVC_Proyect.Models
             RESPUESTA_HTTP = await PETICION_HTTP.PutAsync(URL + DIRECTORIO_API, ContenidoHttp(this));
 
             if (RESPUESTA_HTTP.IsSuccessStatusCode)
-                return MoldeNotificaciones.DevolverNotificacion(
+                return Interaccion.DevolverNotificacion(
                     new Tuple<bool, string>(true, "Categoria de puesto de Trabajo Actualizada con Exito !"));
             else
-                return MoldeNotificaciones.DevolverNotificacion(
+                return Interaccion.DevolverNotificacion(
                      new Tuple<bool, string>(false, REQUEST_ISSUES));
         }
 
@@ -55,10 +55,10 @@ namespace MVC_Proyect.Models
             RESPUESTA_HTTP = await PETICION_HTTP.DeleteAsync(URL + DIRECTORIO_API + "/" + id);
 
             if (RESPUESTA_HTTP.IsSuccessStatusCode)
-                return MoldeNotificaciones.DevolverNotificacion(
+                return Interaccion.DevolverNotificacion(
                     new Tuple<bool, string>(true, "Categoria de puesto de Trabajo Eliminada con Exito !"));
             else
-                return MoldeNotificaciones.DevolverNotificacion(
+                return Interaccion.DevolverNotificacion(
                     new Tuple<bool, string>(false, REQUEST_ISSUES));
         }
 

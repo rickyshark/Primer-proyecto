@@ -36,7 +36,7 @@ namespace MVC_Proyect.Models
             if (RESPUESTA_HTTP.IsSuccessStatusCode)
                 return null;
             else
-                return MoldeNotificaciones.DevolverNotificacion(
+                return Interaccion.DevolverNotificacion(
                      new Tuple<bool, string>(false, REQUEST_ISSUES));
 
         }

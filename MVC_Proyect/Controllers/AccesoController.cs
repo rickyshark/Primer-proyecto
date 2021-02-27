@@ -52,7 +52,7 @@ namespace MVC_Proyect.Controllers
         [HttpGet]
         public async Task<ActionResult> PostJob()
         {
-            ViewData["Listado_Categorias"] = await LoadResource.DropDownListCategorias();
+            CargarRecursosFormularioPostJob();
             return View();
         }
 
@@ -65,10 +65,10 @@ namespace MVC_Proyect.Controllers
                 return View(); // donde corresponda
             }
 
-            ViewData["Listado_Categorias"] = await LoadResource.DropDownListCategorias();
+            CargarRecursosFormularioPostJob();
             return View(offer_Job); 
         }
-
+      
         /*Actualizar oferta*/
         public async Task<IActionResult> PutJob(Offer_Job offer_Job)
         {
@@ -87,7 +87,13 @@ namespace MVC_Proyect.Controllers
             TempData["Notificacion"] = id_oferta.Delete(id_oferta.id);
             return RedirectToAction(""); //donde corresponda
         }
-    
+
+        private void CargarRecursosFormularioPostJob()
+        {
+            ViewData["CategoriasList"] = LoadResource.DropDownListCategorias();
+            ViewData["ProvinciasList"] = LoadResource.DropDownListProvincias();
+        }
+
     }
 
     public static class LoadResource
@@ -106,6 +112,23 @@ namespace MVC_Proyect.Controllers
 
             return dropdownListCategorias;
         }
+
+        public static async Task<List<SelectListItem>> DropDownListProvincias()
+        {
+            var listadoProvincias = await new Provincia().Get();
+
+            var dropdownListPronvicia = listadoProvincias.ToList().ConvertAll(d =>
+             new SelectListItem()
+             {
+                 Text = d.Nombre,
+                 Value = d.Nombre.ToString(),
+                 Selected = false
+             });
+
+            return dropdownListPronvicia;
+        }
+
+
     }
 
- }
+}
