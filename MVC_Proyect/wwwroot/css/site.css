@@ -68,7 +68,6 @@ a {
 }
 
 .nav-end {
-    width: 320px;
     font-size: 18px;
     letter-spacing: 1px;
 }
@@ -99,4 +98,14 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.nav-end>* {
+    margin-left: 10px;
+}
+
+.btn-rojo {
+    border-color: var(--rojo);
+    background-color: var(--rojo);
+    color: #ffffff;
 }
