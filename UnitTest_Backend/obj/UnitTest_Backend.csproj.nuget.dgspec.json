@@ -131,6 +131,10 @@
               "target": "Package",
               "version": "[16.5.0, )"
             },
+            "VisioForge.DotNet.Core.TRIAL": {
+              "target": "Package",
+              "version": "[12.0.82, )"
+            },
             "coverlet.collector": {
               "target": "Package",
               "version": "[1.2.0, )"
