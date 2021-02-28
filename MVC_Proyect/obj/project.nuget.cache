@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "CrrGJI+0hmPO6xH/s6FWfYimz0nqPWpSv0Mw3Z2bPYfYXnCzNNRA13DvcnR3PIsAjtwplyNryr3AbatzFepbIw==",
+  "dgSpecHash": "MA74AmHJfsx/Rs2k/LcZY1J7YS0qXz40+OP1SXX8DU+lukAgF4JzyAU4rTXgn5RZvMvIf9CBrM0Dn7bAZ8KSlg==",
   "success": true,
-  "projectFilePath": "/home/carlossantos/Descargas/Primer-proyecto-3/MVC_Proyect/MVC_Proyect.csproj",
+  "projectFilePath": "/home/carlossantos/Descargas/Primer-proyecto-4/MVC_Proyect/MVC_Proyect.csproj",
   "expectedPackageFiles": [
     "/home/carlossantos/.nuget/packages/microsoft.aspnetcore.html.abstractions/2.2.0/microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
     "/home/carlossantos/.nuget/packages/microsoft.aspnetcore.razor/2.2.0/microsoft.aspnetcore.razor.2.2.0.nupkg.sha512",
