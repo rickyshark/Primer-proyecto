@@ -21,7 +21,7 @@ namespace MVC_Proyect.Models
         public string Compania { get; set; }
         [Required(ErrorMessage = "*")]
         public string Tipo { get; set; }
-        public int Logo { get; set; }
+        public string Logo { get; set; }
         [Required(ErrorMessage = "*")]
         public string Posicion { get; set; }
         [Required(ErrorMessage = "*")]
