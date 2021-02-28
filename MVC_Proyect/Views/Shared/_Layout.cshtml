@@ -1,5 +1,14 @@
 ﻿@{
-    var id = Context.Request.Cookies["ID"].ToString();
+    var id = "0";
+
+    try
+    {
+        id = Context.Request.Cookies["ID"].ToString();
+    }
+    catch
+    {
+        id = "0";
+    }
 }
 
 
@@ -53,22 +62,24 @@
                     <li>
 
 
-                        @if(id != "0"){
-                             <!-- Si esta ingresado entonces muestra esto: -->
-                        <a asp-controller="Acceso" asp-action="PosterDashboard" asp-route-id="@id"
-                            class="nav-botton-login btn-rojo">
-                            Ver Ofertas Posteadas
-                        </a>
+                        @if (id != "0")
+                        {
+                            <!-- Si esta ingresado entonces muestra esto: -->
+                            <a asp-controller="Acceso" asp-action="PosterDashboard" asp-route-id="@id"
+                                class="nav-botton-login btn-rojo">
+                                Ver Ofertas Posteadas
+                            </a>
                         }
-                       else{
-<!--Si no esta ingresado muestra esto: -->
-                        <a asp-controller="Acceso" asp-action="Login" class="nav-botton-login">Ingresar</a>
+                        else
+                        {
+                            <!--Si no esta ingresado muestra esto: -->
+                            <a asp-controller="Acceso" asp-action="Login" class="nav-botton-login">Ingresar</a>
                         }
 
 
-                        
 
-                       
+
+
 
                     </li>
 

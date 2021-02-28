@@ -52,7 +52,7 @@ namespace MVC_Proyect.Controllers
         public async Task<IActionResult> Login(Usuario1 user)
         {
             // metodo para validar
-            TempData["Notificacion"] = await user.TryLogin();
+            TempData["Accion"] = await user.TryLogin();
 
            //Crear cookie
            int id = await user.ObtenerID();
@@ -123,7 +123,7 @@ System.Console.WriteLine(id);
         /*Eliminar oferta*/
         public async Task<IActionResult> DeleteJob(Offer_Job id_oferta)
         {
-            TempData["Notificacion"] = id_oferta.Delete(id_oferta.id);
+            TempData["Notificacion"] = id_oferta.Delete();
             return RedirectToAction(""); //donde corresponda
         }
       
