@@ -9,7 +9,7 @@ using MVC_Proyect.Recursos.Interface;
 
 namespace MVC_Proyect.Models
 {
-    public class Report_Offer : RequestProperties, IPost, IPut
+    public class Report_Offer : RequestProperties, IPost, IPut, IDelete
     {
         public int Id { get; set; }
         public int Offer_Jobid { get; set; }
@@ -54,9 +54,9 @@ namespace MVC_Proyect.Models
             return Listado;
         }
         
-        public async Task<string> Delete(int id)
+        public async Task<string> Delete()
         {
-            RESPUESTA_HTTP = await PETICION_HTTP.DeleteAsync(URL + DIRECTORIO_API + "/" + id);
+            RESPUESTA_HTTP = await PETICION_HTTP.DeleteAsync(URL + DIRECTORIO_API + "/" + Id);
 
             if (RESPUESTA_HTTP.IsSuccessStatusCode)
                 return Interaccion.DevolverNotificacion(

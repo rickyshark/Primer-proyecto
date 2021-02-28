@@ -69,9 +69,9 @@ namespace MVC_Proyect.Models
             return Listado;
         }
 
-        public async Task<string> Delete(int id)
+        public async Task<string> Delete()
         {           
-            RESPUESTA_HTTP = await PETICION_HTTP.DeleteAsync(URL + DIRECTORIO_API + "/" + id);
+            RESPUESTA_HTTP = await PETICION_HTTP.DeleteAsync(URL + DIRECTORIO_API + "/" + ID);
 
             if (RESPUESTA_HTTP.IsSuccessStatusCode)
                 return Interaccion.DevolverNotificacion(
@@ -94,7 +94,6 @@ namespace MVC_Proyect.Models
             else
                 return Interaccion.DevolverNotificacion(
                     new Tuple<bool, string>(false, "Username o Contraseña Incorrecta"));
-
         }
 
     }

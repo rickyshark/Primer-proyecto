@@ -50,7 +50,7 @@ namespace MVC_Proyect.Models
             return Listado;
         }
 
-        public async Task<string> Delete(int id)
+        public async Task<string> Delete()
         {
             RESPUESTA_HTTP = await PETICION_HTTP.DeleteAsync(URL + DIRECTORIO_API + "/" + id);
 

@@ -10,7 +10,6 @@ namespace MVC_Proyect.Controllers
 {
     public class AccesoController : Controller
     {
-
         public async Task<ActionResult> PosterDashboard(int id)
         {
             Offer_Job Job = new Offer_Job();
@@ -19,15 +18,11 @@ namespace MVC_Proyect.Controllers
             var users = await user.Get();
             var empleos = await Job.Get();
 
-
-
             var usuario = users.Where(x => x.ID == id).First();
             ViewData["Jobs"] = empleos.Where(x => x.Email == usuario.Email).ToList();
             ViewData["Poster"] = usuario;
             return View();
         }
-
-
 
         //Vista del Login para iniciar sesion
         [HttpGet]
@@ -41,8 +36,7 @@ namespace MVC_Proyect.Controllers
         public async Task<IActionResult> Login(Usuario1 user)
         {
             // metodo para validar
-            TempData["Notificacion"] = await user.TryLogin();
-
+            TempData["Accion"] = await user.TryLogin();
             return View();
         }
 
@@ -82,7 +76,7 @@ namespace MVC_Proyect.Controllers
             if (ModelState.IsValid)
             {
                 TempData["Notificacion"] = await offer_Job.Post();
-                return View(); // donde corresponda
+                return RedirectToAction("PosterDashboard", offer_Job.Id_Usuario);
             }
 
             ViewData["Listado_Categorias"] = await LoadResource.DropDownListCategorias();
@@ -105,7 +99,7 @@ namespace MVC_Proyect.Controllers
         /*Eliminar oferta*/
         public async Task<IActionResult> DeleteJob(Offer_Job id_oferta)
         {
-            TempData["Notificacion"] = id_oferta.Delete(id_oferta.id);
+            TempData["Notificacion"] = id_oferta.Delete();
             return RedirectToAction(""); //donde corresponda
         }
       
@@ -127,7 +121,6 @@ namespace MVC_Proyect.Controllers
 
             return dropdownListCategorias;
         }
-
         public static async Task<List<SelectListItem>> DropDownListProvincias()
         {
             var listadoProvincias = await new Provincia().Get();
