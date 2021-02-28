@@ -1,0 +1,138 @@
+﻿.container1 {
+    display: flex;
+    margin-top: 25px;
+    height: 90px;
+    width: 100%;
+    border: 1px solid var(--azul);
+    color: var(--azul);
+}
+
+.titulo-categoria h1 {
+    text-align: center;
+    margin: 25px 0 0 0;
+}
+
+.titulo-categoria{
+    width: 100%;
+}
+
+.container2 {
+    display: flex;
+    margin-top: 25px;
+    height: auto;
+    width: 100%;
+    border-bottom: 1px solid var(--rojo);
+}
+
+.descripcion-puesto {
+    width: 100%;
+    margin:0 auto;
+    max-width: 992px;
+}
+
+.descripcion-puesto h4 {
+    color: var(--rojo);
+    margin: 0 0 40px 0;
+    
+}
+
+.descripcion-puesto .desc {
+    display:flex;
+}
+
+.descripcion-puesto .desc .subdiv {
+    width: 248px;
+    padding-left: 45px;
+}
+
+.descripcion-puesto .desc .subdiv button {
+    width: 70px;
+    height: 33px;
+    color: white;
+    border: none;
+    background-color: var(--rojo);
+}
+
+.descripcion-puesto .descripcion {
+    width: 100%;
+    height: 150px;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin: 25px 0 0 0;
+}
+
+.descripcion-puesto p{
+    font-weight:bold;
+    margin:40px 0;
+}
+
+.container3 {
+display: flex;
+margin-top: 25px;
+height: auto;
+width: 100%;
+padding-bottom: 60px;
+}
+
+.container3 .related-jobs {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 992px;
+}
+
+.container3 .gral-rel-job {
+    display: flex;
+}
+
+.container3 .rel-job {
+    width: 50%;
+    padding: 0 50px;
+}
+
+.container3 .gral-rel-job h4 {
+    color: var(--azul);
+    margin: 30px 0;
+}
+
+.container3 .rel-job p {
+    font-weight: bold;
+    text-align: center;
+    margin: 38px 0;
+}
+
+.container3 .related-jobs h4 {
+    margin: 30px 0;
+    color:var(--azul);
+}
+
+.container3 .details {
+    display: flex;
+    margin: 0 0 20px 0;
+}
+
+.container3 .details div {
+    width: 50%;
+    text-align: center;
+    padding: 0px 40px;
+    font-weight: bold;
+}
+
+.container3 .rel-job-desc {
+    border: 1px solid gray;
+    height: 80px;
+    margin-bottom: 15px;
+    text-align: center;
+    padding-top: 46px;
+}
+
+.container3 .see-more {
+    text-align: center;
+}
+
+.container3 .see-more button {
+    width: 226px;
+    height: 33px;
+    color: white;
+    border: none;
+    background-color: var(--azul);
+}
