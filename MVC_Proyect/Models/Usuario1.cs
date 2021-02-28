@@ -88,12 +88,24 @@ namespace MVC_Proyect.Models
             int idUsuario = lst.ToList().
                 Where(x => x.Username == Username && x.Contraseña == Contraseña).
                 Select(x => x.ID).FirstOrDefault();
-                
+
             if(idUsuario != 0 && idUsuario.ToString() != null)
                 return Interaccion.Redireccion("PosterDashboard", idUsuario);
             else
                 return Interaccion.DevolverNotificacion(
                     new Tuple<bool, string>(false, "Username o Contraseña Incorrecta"));
+
+        }
+
+         public async Task<int> ObtenerID()
+        {
+            var lst = await Get();
+
+            int idUsuario = lst.ToList().
+                Where(x => x.Username == Username && x.Contraseña == Contraseña).
+                Select(x => x.ID).FirstOrDefault();
+               
+            return idUsuario;
 
         }
 

@@ -5,11 +5,22 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using MVC_Proyect.Models;
+using Microsoft.AspNetCore.Http;
 
 namespace MVC_Proyect.Controllers
 {
     public class AccesoController : Controller
     {
+
+//Cerrar Sesion del usuario
+        public ActionResult CloseSession(){
+
+            int id = 0;
+            CookieOptions cookie = new CookieOptions();
+            Response.Cookies.Append("ID", id.ToString(), cookie);
+        return Redirect("/Job/ScreenPrincipalView");
+
+        }
 
         public async Task<ActionResult> PosterDashboard(int id)
         {
@@ -42,6 +53,13 @@ namespace MVC_Proyect.Controllers
         {
             // metodo para validar
             TempData["Notificacion"] = await user.TryLogin();
+
+           //Crear cookie
+           int id = await user.ObtenerID();
+            CookieOptions cookie = new CookieOptions();
+            Response.Cookies.Append("ID", id.ToString(), cookie);
+
+System.Console.WriteLine(id);
 
             return View();
         }
@@ -142,6 +160,8 @@ namespace MVC_Proyect.Controllers
 
             return dropdownListProvincias;
         }
+
+    
 
     }
 
