@@ -62,5 +62,10 @@ namespace MVC_Proyect.Controllers
             return View();
         }
 
+        public IActionResult CategoryView()
+        {
+            return View();
+        }
+
     }
 }

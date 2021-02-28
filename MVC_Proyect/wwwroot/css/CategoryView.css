@@ -1,0 +1,117 @@
+﻿.container1 {
+display: flex;
+margin-top: 25px;
+height: 90px;
+width: 100%;
+border: 1px solid var(--azul);
+color: black;
+}
+
+.container1-1 {
+    display: flex;
+    margin-top: 25px;
+    height: 65px;
+    width: 100%;
+    border-bottom: 1px solid var(--rojo);
+    color: black;
+}
+
+.container1-1 .vacantes {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 992px;
+    color: var(--azul);
+}
+
+
+.titulo-categoria h1 {
+text-align: center;
+margin: 25px 0 0 0;
+}
+
+.titulo-categoria {
+width: 100%;
+}
+
+.container2 {
+display: flex;
+margin-top: 25px;
+height: auto;
+width: 100%;
+border-bottom: 1px solid var(--rojo);
+}
+
+.descripcion-puesto {
+width: 100%;
+margin: 0 auto;
+max-width: 992px;
+}
+
+.descripcion-puesto h4 {
+color: black;
+margin: 0 0 40px 0;
+}
+
+.descripcion-puesto .desc {
+display: flex;
+}
+
+.descripcion-puesto .desc .subdiv {
+    width: 248px;
+    padding-left: 45px;
+}
+
+.descripcion-puesto .desc .subdiv button {
+    width: 70px;
+    height: 33px;
+    color: white;
+    border: none;
+    background-color: var(--rojo);
+}
+
+.descripcion-puesto .descripcion {
+    width: 100%;
+    text-align: center;
+    padding: 60px 0;
+    border: 2px solid gray;
+    border-radius: 5px;
+    margin: 25px 0 0 0;
+    color:gray;
+}
+
+.descripcion-puesto p {
+font-weight: bold;
+margin: 40px 0;
+}
+
+.container2 .see-more button {
+    width: 226px;
+    height: 33px;
+    color: white;
+    border: none;
+    background-color: var(--azul);
+    margin: 15px 0 30px 0;
+}
+
+.container3 .pagination {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 992px;
+}
+
+.container3 .pagination button {
+    width: 3%;
+    height: 33px;
+    color: white;
+    border: none;
+    background-color: var(--azul);
+    margin: 15px 33px 30px 0;
+}
+
+    .container3 .pagination button:nth-child(7) {
+        width: 10%;
+    }
+
+    .container3 .pagination button:nth-child(1) {
+        background-color:gray;
+    }
