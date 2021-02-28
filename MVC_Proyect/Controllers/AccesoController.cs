@@ -5,11 +5,23 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using MVC_Proyect.Models;
+using Microsoft.AspNetCore.Http;
 
 namespace MVC_Proyect.Controllers
 {
     public class AccesoController : Controller
     {
+
+//Cerrar Sesion del usuario
+        public ActionResult CloseSession(){
+
+            int id = 0;
+            CookieOptions cookie = new CookieOptions();
+            Response.Cookies.Append("ID", id.ToString(), cookie);
+        return Redirect("/Job/ScreenPrincipalView");
+
+        }
+
         public async Task<ActionResult> PosterDashboard(int id)
         {
             Offer_Job Job = new Offer_Job();
@@ -18,11 +30,15 @@ namespace MVC_Proyect.Controllers
             var users = await user.Get();
             var empleos = await Job.Get();
 
+
+
             var usuario = users.Where(x => x.ID == id).First();
             ViewData["Jobs"] = empleos.Where(x => x.Email == usuario.Email).ToList();
             ViewData["Poster"] = usuario;
             return View();
         }
+
+
 
         //Vista del Login para iniciar sesion
         [HttpGet]
@@ -36,7 +52,15 @@ namespace MVC_Proyect.Controllers
         public async Task<IActionResult> Login(Usuario1 user)
         {
             // metodo para validar
-            TempData["Accion"] = await user.TryLogin();
+            TempData["Notificacion"] = await user.TryLogin();
+
+           //Crear cookie
+           int id = await user.ObtenerID();
+            CookieOptions cookie = new CookieOptions();
+            Response.Cookies.Append("ID", id.ToString(), cookie);
+
+System.Console.WriteLine(id);
+
             return View();
         }
 
@@ -76,7 +100,7 @@ namespace MVC_Proyect.Controllers
             if (ModelState.IsValid)
             {
                 TempData["Notificacion"] = await offer_Job.Post();
-                return RedirectToAction("PosterDashboard", offer_Job.Id_Usuario);
+                return View(); // donde corresponda
             }
 
             ViewData["Listado_Categorias"] = await LoadResource.DropDownListCategorias();
@@ -99,7 +123,7 @@ namespace MVC_Proyect.Controllers
         /*Eliminar oferta*/
         public async Task<IActionResult> DeleteJob(Offer_Job id_oferta)
         {
-            TempData["Notificacion"] = id_oferta.Delete();
+            TempData["Notificacion"] = id_oferta.Delete(id_oferta.id);
             return RedirectToAction(""); //donde corresponda
         }
       
@@ -121,6 +145,7 @@ namespace MVC_Proyect.Controllers
 
             return dropdownListCategorias;
         }
+
         public static async Task<List<SelectListItem>> DropDownListProvincias()
         {
             var listadoProvincias = await new Provincia().Get();
@@ -135,6 +160,8 @@ namespace MVC_Proyect.Controllers
 
             return dropdownListProvincias;
         }
+
+    
 
     }
 
