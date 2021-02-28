@@ -1,5 +1,20 @@
-﻿<!DOCTYPE html>
+﻿@{
+    var id = "0";
+
+    try
+    {
+        id = Context.Request.Cookies["ID"].ToString();
+    }
+    catch
+    {
+        id = "0";
+    }
+}
+
+
+<!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="utf-8" />
     <title>@ViewData["Title"] - MVC_Proyect</title>
@@ -7,31 +22,34 @@
     <link rel="stylesheet" href="~/css/site.css" />
     <!-- Google Fonts-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,400&display=swap"
+        rel="stylesheet">
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
 
     <title>Bolsa de Empleo</title>
 
 </head>
+
 <body>
     <header class="header-padre">
         <nav>
             <ul>
                 <div class="nav-header">
-                    
+
                     <li>
                         <a asp-controller="Job" asp-action="ScreenPrincipalView">
-                        <img src="~/img/logo.svg" alt="Logo" width="40">
+                            <img src="~/img/logo.svg" alt="Logo" width="40">
                         </a>
                     </li>
                     <li>&nbsp Proyecto Web</li>
-                  
-                 </div>
+
+                </div>
 
                 <div class="nav-body">
                     <li>
-                        <a asp-controller="Job" asp-action="SearchJob">Buscar Empleo <img src="~/img/search.svg" alt="Search" width="20px"> </a>
+                        <a asp-controller="Job" asp-action="SearchJob">Buscar Empleo <img src="~/img/search.svg"
+                                alt="Search" width="20px"> </a>
                     </li>
                     <li>
                         <a> Ver Categorias <img src="~/img/Category.svg" alt="Category" width="20px"> </a>
@@ -39,18 +57,38 @@
                 </div>
                 <div class="nav-end">
                     <li class="">
-                       <a asp-controller="Acceso" asp-action="Register" class="nav-botton-post"> Postear un empleo</a>
+                        <a asp-controller="Acceso" asp-action="Register" class="nav-botton-post"> Postear un empleo</a>
                     </li>
                     <li>
-                        <a asp-controller="Acceso" asp-action="Login" class="nav-botton-login">Ingresar</a>
+
+
+                        @if (id != "0")
+                        {
+                            <!-- Si esta ingresado entonces muestra esto: -->
+                            <a asp-controller="Acceso" asp-action="PosterDashboard" asp-route-id="@id"
+                                class="nav-botton-login btn-rojo">
+                                Ver Ofertas Posteadas
+                            </a>
+                        }
+                        else
+                        {
+                            <!--Si no esta ingresado muestra esto: -->
+                            <a asp-controller="Acceso" asp-action="Login" class="nav-botton-login">Ingresar</a>
+                        }
+
+
+
+
+
+
                     </li>
 
                 </div>
             </ul>
         </nav>
     </header>
-            @RenderBody()
- <footer>
+    @RenderBody()
+    <footer>
         <p>Made with &#10084;&#65039; for you by Grupo #3</p>
     </footer>
 
@@ -59,4 +97,5 @@
     <script src="~/js/site.js" asp-append-version="true"></script>
     @RenderSection("Scripts", required: false)
 </body>
+
 </html>

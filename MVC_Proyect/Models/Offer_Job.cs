@@ -47,10 +47,10 @@ namespace MVC_Proyect.Models
             RESPUESTA_HTTP = await PETICION_HTTP.PostAsync(URL + DIRECTORIO_API, ContenidoHttp(this));
 
             if (RESPUESTA_HTTP.IsSuccessStatusCode)
-                return MoldeNotificaciones.DevolverNotificacion(
+                return Interaccion.DevolverNotificacion(
                     new Tuple<bool, string>(true, "Oferta de trabajo posteada con Exito !"));
             else
-                return MoldeNotificaciones.DevolverNotificacion(
+                return Interaccion.DevolverNotificacion(
                      new Tuple<bool, string>(false, REQUEST_ISSUES));
         }
 
@@ -59,10 +59,10 @@ namespace MVC_Proyect.Models
             RESPUESTA_HTTP = await PETICION_HTTP.PutAsync(URL + DIRECTORIO_API, ContenidoHttp(this));
 
             if (RESPUESTA_HTTP.IsSuccessStatusCode)
-                return MoldeNotificaciones.DevolverNotificacion(
+                return Interaccion.DevolverNotificacion(
                     new Tuple<bool, string>(true, "Oferta de trabajo Actualizada con Exito !"));
             else
-                return MoldeNotificaciones.DevolverNotificacion(
+                return Interaccion.DevolverNotificacion(
                      new Tuple<bool, string>(false, REQUEST_ISSUES));
         }
 
@@ -74,15 +74,15 @@ namespace MVC_Proyect.Models
             return Listado;
         }
 
-        public async Task<string> Delete(int id)
+        public async Task<string> Delete()
         {
             RESPUESTA_HTTP = await PETICION_HTTP.DeleteAsync(URL + DIRECTORIO_API + "/" + id);
 
             if (RESPUESTA_HTTP.IsSuccessStatusCode)
-                return MoldeNotificaciones.DevolverNotificacion(
+                return Interaccion.DevolverNotificacion(
                                    new Tuple<bool, string>(true, "Oferta de trabajo Eliminada con Exito !"));
             else
-                return MoldeNotificaciones.DevolverNotificacion(
+                return Interaccion.DevolverNotificacion(
                     new Tuple<bool, string>(false, REQUEST_ISSUES));
         }
 

@@ -9,7 +9,7 @@ using MVC_Proyect.Recursos.Interface;
 
 namespace MVC_Proyect.Models
 {
-    public class Report_Offer : RequestProperties, IPost, IPut
+    public class Report_Offer : RequestProperties, IPost, IPut, IDelete
     {
         public int Id { get; set; }
         public int Offer_Jobid { get; set; }
@@ -27,10 +27,10 @@ namespace MVC_Proyect.Models
             RESPUESTA_HTTP = await PETICION_HTTP.PostAsync(URL + DIRECTORIO_API, ContenidoHttp(this));
 
             if (RESPUESTA_HTTP.IsSuccessStatusCode)
-                return MoldeNotificaciones.DevolverNotificacion(
+                return Interaccion.DevolverNotificacion(
                     new Tuple<bool, string>(true, "Reporte enviado con Exito !"));
             else
-                return MoldeNotificaciones.DevolverNotificacion(
+                return Interaccion.DevolverNotificacion(
                      new Tuple<bool, string>(false, REQUEST_ISSUES));
         }
 
@@ -39,10 +39,10 @@ namespace MVC_Proyect.Models
             RESPUESTA_HTTP = await PETICION_HTTP.PutAsync(URL + DIRECTORIO_API, ContenidoHttp(this));
 
             if (RESPUESTA_HTTP.IsSuccessStatusCode)
-                return MoldeNotificaciones.DevolverNotificacion(
+                return Interaccion.DevolverNotificacion(
                     new Tuple<bool, string>(true, "Reporte actualizado con Exito !"));
             else
-                return MoldeNotificaciones.DevolverNotificacion(
+                return Interaccion.DevolverNotificacion(
                      new Tuple<bool, string>(false, REQUEST_ISSUES));
         }
 
@@ -54,15 +54,15 @@ namespace MVC_Proyect.Models
             return Listado;
         }
         
-        public async Task<string> Delete(int id)
+        public async Task<string> Delete()
         {
-            RESPUESTA_HTTP = await PETICION_HTTP.DeleteAsync(URL + DIRECTORIO_API + "/" + id);
+            RESPUESTA_HTTP = await PETICION_HTTP.DeleteAsync(URL + DIRECTORIO_API + "/" + Id);
 
             if (RESPUESTA_HTTP.IsSuccessStatusCode)
-                return MoldeNotificaciones.DevolverNotificacion(
+                return Interaccion.DevolverNotificacion(
                                    new Tuple<bool, string>(true, "Reporte Eliminado con Exito !"));
             else
-                return MoldeNotificaciones.DevolverNotificacion(
+                return Interaccion.DevolverNotificacion(
                     new Tuple<bool, string>(false, REQUEST_ISSUES));
         }
      

@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace ApiSitio.Contexts
 {
-    public class AppDbContext: DbContext
+    public class AppDbContext : DbContext
     {
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options)
         {
@@ -20,5 +20,6 @@ namespace ApiSitio.Contexts
         public DbSet<Offer_Job> Offer_Job { get; set; }
         public DbSet<Offer_Job_Model> Offer_Job_Model { get; set; }
         public DbSet<Categoria> Categoria { get; set; }
+        public DbSet<Provincias> Provincias { get; set; }
     }
 }

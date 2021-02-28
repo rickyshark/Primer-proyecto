@@ -7,6 +7,6 @@ namespace MVC_Proyect.Recursos.Interface
 {
     interface IDelete
     {
-        Task<string> Delete(int id);
+        Task<string> Delete();
     }
 }

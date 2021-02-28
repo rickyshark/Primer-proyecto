@@ -21,6 +21,11 @@ namespace ApiSitio.Controllers
         {
             this.context = context;
         }
+
+        public CategoriaController()
+        {
+        }
+
         // GET: api/<CorreoController>
         [HttpGet]
         public IEnumerable<Categoria> Get()
