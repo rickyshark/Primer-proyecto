@@ -5314,20 +5314,25 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Admin\\.nuget\\packages\\": {}
+    "C:\\Users\\monte\\.nuget\\packages\\": {},
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Admin\\Desktop\\ITLA\\Ultimate 1\\ApiSitio\\ApiSitio.csproj",
+      "projectUniqueName": "C:\\Users\\monte\\Source\\Repos\\Primer-proyecto\\ApiSitio\\ApiSitio.csproj",
       "projectName": "ApiSitio",
-      "projectPath": "C:\\Users\\Admin\\Desktop\\ITLA\\Ultimate 1\\ApiSitio\\ApiSitio.csproj",
-      "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Admin\\Desktop\\ITLA\\Ultimate 1\\ApiSitio\\obj\\",
+      "projectPath": "C:\\Users\\monte\\Source\\Repos\\Primer-proyecto\\ApiSitio\\ApiSitio.csproj",
+      "packagesPath": "C:\\Users\\monte\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\monte\\Source\\Repos\\Primer-proyecto\\ApiSitio\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Microsoft\\Xamarin\\NuGet\\"
+      ],
       "configFilePaths": [
-        "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\monte\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
@@ -5381,7 +5386,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
       }
     }
   }
