@@ -252,3 +252,4 @@ C:\Users\Legnar Acv2\source\repos\Primer-proyecto\Prog3\ApiSitio\obj\Debug\netco
 C:\Users\Legnar Acv2\source\repos\Primer-proyecto\Prog3\ApiSitio\obj\Debug\netcoreapp3.1\ApiSitio.pdb
 C:\Users\Legnar Acv2\source\repos\Primer-proyecto\Prog3\ApiSitio\obj\Debug\netcoreapp3.1\ApiSitio.genruntimeconfig.cache
 C:\Users\monte\Source\Repos\Primer-proyecto\ApiSitio\bin\Debug\netcoreapp3.1\Properties\ServiceDependencies\WebApi-Prog3 - Web Deploy\profile.arm.json
+C:\Users\monte\Source\Repos\Primer-proyecto\ApiSitio\obj\Debug\netcoreapp3.1\ApiSitio.csprojAssemblyReference.cache

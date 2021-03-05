@@ -113,7 +113,7 @@ System.Console.WriteLine(id);
         {
             if (ModelState.IsValid)
             {
-                TempData["Notificacion"] = offer_Job.Put();
+                 TempData["Notificacion"] = await offer_Job.Put();
                 return RedirectToAction(""); //donde corresponda
             }
 
@@ -123,7 +123,7 @@ System.Console.WriteLine(id);
         /*Eliminar oferta*/
         public async Task<IActionResult> DeleteJob(Offer_Job id_oferta)
         {
-            TempData["Notificacion"] = id_oferta.Delete();
+            TempData["Notificacion"] = await id_oferta.Delete();
             return RedirectToAction(""); //donde corresponda
         }
       
