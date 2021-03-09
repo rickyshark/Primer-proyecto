@@ -13,6 +13,7 @@ namespace MVC_Proyect
 {
     public class Startup
     {
+
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
@@ -53,5 +54,7 @@ namespace MVC_Proyect
                     pattern: "{controller=Job}/{action=ScreenPrincipalView}/{id?}");
             });
         }
+
+        
     }
 }
